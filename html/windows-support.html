@@ -20,8 +20,8 @@
 
         <link href="//fonts.googleapis.com/css?family=Fira+Sans|Droid+Sans|Source+Sans+Pro" rel="stylesheet" type="text/css">
 
-        <link rel="stylesheet" href="./phpnet.css?1609711191" type="text/css" media="screen">
-        <link rel="stylesheet" href="./styles.css?1609711191" type="text/css" media="screen">
+        <link rel="stylesheet" href="./phpnet.css?1610232686" type="text/css" media="screen">
+        <link rel="stylesheet" href="./styles.css?1610232686" type="text/css" media="screen">
 
         <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
@@ -41,7 +41,7 @@
     <main class="info-main">
         <article id="layout-content" class="info-version">
     <header class="info-version-header">
-        <h1><a href="https://www.php.net/manual/en/migration74.windows-support.php" target="_blank">PHP 7.4</a></h1>
+        <h1><a href="https://www.php.net/manual/en/migration74.windows-support" target="_blank">PHP 7.4</a></h1>
     </header>
 
     <div id="migration74.windows-support" class="sect1">
@@ -59,10 +59,10 @@
   <h3 class="title">CTRL handling</h3>
   <p class="para">
    CTRL+C and CTRL+BREAK on console can be caught by setting a handler function
-   with <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.sapi-windows-set-ctrl-handler.php" class="function">sapi_windows_set_ctrl_handler()</a></span>.
+   with <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.sapi-windows-set-ctrl-handler.html" class="function">sapi_windows_set_ctrl_handler()</a></span>.
   </p>
   <p class="para">
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.proc-open.php" class="function">proc_open()</a></span> on Windows can be passed a
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.proc-open.html" class="function">proc_open()</a></span> on Windows can be passed a
    "create_process_group" option. It is required if the child
    process is supposed to handle CTRL events.
   </p>
@@ -104,14 +104,14 @@
   <p class="para">
    libsqlite3 is no longer compiled statically into <var class="filename">php_sqlite3.dll</var>
    and <var class="filename">php_pdo_sqlite.dll</var>, but rather available as <var class="filename">libsqlite3.dll</var>.
-   Refer to the installation instructions for <a target="_blank" href="https://www.php.net/manual/en/sqlite3.installation.php" class="link">SQLite3</a> and
-   <a target="_blank" href="https://www.php.net/manual/en/ref.pdo-sqlite.php#ref.pdo-sqlite.installation" class="link">PDO_SQLITE</a>, respectively.
+   Refer to the installation instructions for <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/sqlite3.installation.html" class="link">SQLite3</a> and
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/ref.pdo-sqlite.html#ref.pdo-sqlite.installation" class="link">PDO_SQLITE</a>, respectively.
   </p>
  </div>
 
 </div></article><article id="layout-content" class="info-version">
     <header class="info-version-header">
-        <h1><a href="https://www.php.net/manual/en/migration73.windows-support.php" target="_blank">PHP 7.3</a></h1>
+        <h1><a href="https://www.php.net/manual/en/migration73.windows-support" target="_blank">PHP 7.3</a></h1>
     </header>
 
     <div id="migration73.windows-support" class="sect1">
@@ -136,7 +136,7 @@
 
 </div></article><article id="layout-content" class="info-version">
     <header class="info-version-header">
-        <h1><a href="https://www.php.net/manual/en/migration71.windows-support.php" target="_blank">PHP 7.1</a></h1>
+        <h1><a href="https://www.php.net/manual/en/migration71.windows-support" target="_blank">PHP 7.1</a></h1>
     </header>
 
     <div id="migration71.windows-support" class="sect1">
@@ -218,12 +218,12 @@
   </p>
   <p class="para">
     Special awareness for the DBCS systems - the codepage switch on runtime
-    using <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.ini-set.php" class="function">ini_set()</a></span> is likely to cause display issues. The difference to the
+    using <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.ini-set.html" class="function">ini_set()</a></span> is likely to cause display issues. The difference to the
     non DBCS systems is, that the extended characters require two console cells
     to be displayed. In certain case, only the mapping of the characters into
     the glyph set of the font could happen, no actual font change. This is the
     nature of DBCS systems, the most simple way to prevent display issues is
-    to avoid usage of <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.ini-set.php" class="function">ini_set()</a></span> for the codepage change.
+    to avoid usage of <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.ini-set.html" class="function">ini_set()</a></span> for the codepage change.
   </p>
   <p class="para">
     As a result of UTF-8 support in the streams, PHP scripts are not limited
@@ -253,8 +253,8 @@
   <h3 class="title">readline</h3>
 
   <p class="para">
-   The <a target="_blank" href="https://www.php.net/manual/en/book.readline.php" class="link">readline extension</a> is supported
-   through the <a target="_blank" href="https://www.php.net/manual/en/http://mingweditline.sourceforge.net/" class="link external">» WinEditLine
+   The <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.readline.html" class="link">readline extension</a> is supported
+   through the <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/http://mingweditline.sourceforge.net/" class="link external">» WinEditLine
    library</a>. Thereby, the interactive <acronym title="Command Line Interpreter/Interface">CLI</acronym> shell is
    supported as well (<code class="literal">php.exe -a</code>).
   </p>
@@ -272,7 +272,7 @@
  <div class="sect2" id="migration71.windows-support.ftok">
   <h3 class="title">ftok()</h3>
   <p class="para">
-   Added support for <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.ftok.php" class="function">ftok()</a></span>
+   Added support for <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.ftok.html" class="function">ftok()</a></span>
   </p>
  </div>
 

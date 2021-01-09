@@ -20,8 +20,8 @@
 
         <link href="//fonts.googleapis.com/css?family=Fira+Sans|Droid+Sans|Source+Sans+Pro" rel="stylesheet" type="text/css">
 
-        <link rel="stylesheet" href="./phpnet.css?1609711191" type="text/css" media="screen">
-        <link rel="stylesheet" href="./styles.css?1609711191" type="text/css" media="screen">
+        <link rel="stylesheet" href="./phpnet.css?1610232686" type="text/css" media="screen">
+        <link rel="stylesheet" href="./styles.css?1610232686" type="text/css" media="screen">
 
         <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
@@ -41,7 +41,7 @@
     <main class="info-main">
         <article id="layout-content" class="info-version">
     <header class="info-version-header">
-        <h1><a href="https://www.php.net/manual/en/migration56.openssl.php" target="_blank">PHP 5.6</a></h1>
+        <h1><a href="https://www.php.net/manual/en/migration56.openssl" target="_blank">PHP 5.6</a></h1>
     </header>
 
     <div id="migration56.openssl" class="sect1">
@@ -63,18 +63,18 @@
     The default CA bundle may be overridden on a global basis by setting
     either the openssl.cafile or openssl.capath configuration setting, or on a
     per request basis by using the
-    <a target="_blank" href="https://www.php.net/manual/en/context.ssl.php#context.ssl.cafile" class="link"><code class="parameter">cafile</code></a> or
-    <a target="_blank" href="https://www.php.net/manual/en/context.ssl.php#context.ssl.capath" class="link"><code class="parameter">capath</code></a>
+    <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/context.ssl.html#context.ssl.cafile" class="link"><code class="parameter">cafile</code></a> or
+    <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/context.ssl.html#context.ssl.capath" class="link"><code class="parameter">capath</code></a>
     context options.
    </p>
 
    <p class="para">
     While not recommended in general, it is possible to disable peer
     certificate verification for a request by setting the
-    <a target="_blank" href="https://www.php.net/manual/en/context.ssl.php#context.ssl.verify-peer" class="link"><code class="parameter">verify_peer</code></a>
-    context option to <strong><code>false</code></strong>, and to disable peer name validation by setting
-    the <a target="_blank" href="https://www.php.net/manual/en/context.ssl.php#context.ssl.verify-peer-name" class="link"><code class="parameter">verify_peer_name</code></a>
-    context option to <strong><code>false</code></strong>.
+    <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/context.ssl.html#context.ssl.verify-peer" class="link"><code class="parameter">verify_peer</code></a>
+    context option to <strong><code>FALSE</code></strong>, and to disable peer name validation by setting
+    the <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/context.ssl.html#context.ssl.verify-peer-name" class="link"><code class="parameter">verify_peer_name</code></a>
+    context option to <strong><code>FALSE</code></strong>.
    </p>
 
  </div>
@@ -84,9 +84,9 @@
 
   <p class="para">
    Support has been added for extracting and verifying certificate
-   fingerprints. <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.openssl-x509-fingerprint.php" class="function">openssl_x509_fingerprint()</a></span> has been added
+   fingerprints. <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.openssl-x509-fingerprint.html" class="function">openssl_x509_fingerprint()</a></span> has been added
    to extract a fingerprint from an X.509 certificate, and two
-   <a target="_blank" href="https://www.php.net/manual/en/context.ssl.php" class="link">SSL stream context</a> options have been
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/context.ssl.html" class="link">SSL stream context</a> options have been
    added: <code class="literal">capture_peer_cert</code> to capture the peer's X.509
    certificate, and <code class="literal">peer_fingerprint</code> to assert that the
    peer's certificate should match the given fingerprint.
@@ -99,7 +99,7 @@
   <p class="para">
    The default ciphers used by PHP have been updated to a more secure list
    based on the
-   <a target="_blank" href="https://www.php.net/manual/en/https://wiki.mozilla.org/Security/Server_Side_TLS#Recommended_Ciphersuite" class="link external">» Mozilla cipher recommendations</a>,
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/https://wiki.mozilla.org/Security/Server_Side_TLS#Recommended_Ciphersuite" class="link external">» Mozilla cipher recommendations</a>,
    with two additional exclusions: anonymous Diffie-Hellman ciphers, and RC4.
   </p>
 
@@ -107,7 +107,7 @@
    This list can be accessed via the new
    <strong><code>OPENSSL_DEFAULT_STREAM_CIPHERS</code></strong> constant, and can be
    overridden (as in previous PHP versions) by setting the
-   <a target="_blank" href="https://www.php.net/manual/en/context.ssl.php#context.ssl.ciphers" class="link"><code class="parameter">ciphers</code></a>
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/context.ssl.html#context.ssl.ciphers" class="link"><code class="parameter">ciphers</code></a>
    context option.
   </p>
  </div>
@@ -118,9 +118,9 @@
   <p class="para">
    SSL/TLS compression has been disabled by default to mitigate the CRIME
    attack. PHP 5.4.13 added a
-   <a target="_blank" href="https://www.php.net/manual/en/context.ssl.php#context.ssl.disable-compression" class="link"><code class="parameter">disable_compression</code></a>
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/context.ssl.html#context.ssl.disable-compression" class="link"><code class="parameter">disable_compression</code></a>
    context option to allow compression to be disabled: this is now set to
-   <strong><code>true</code></strong> (that is, compression is disabled) by default.
+   <strong><code>TRUE</code></strong> (that is, compression is disabled) by default.
   </p>
  </div>
 
@@ -139,10 +139,10 @@
 
   <p class="para">
    The protocol and cipher that were negotiated for an encrypted stream can
-   now be accessed via <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.stream-get-meta-data.php" class="function">stream_get_meta_data()</a></span> or
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.stream-context-get-options.php" class="function">stream_context_get_options()</a></span> when the
+   now be accessed via <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.stream-get-meta-data.html" class="function">stream_get_meta_data()</a></span> or
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.stream-context-get-options.html" class="function">stream_context_get_options()</a></span> when the
    <code class="parameter">capture_session_meta</code> SSL context option is set to
-   <strong><code>true</code></strong>.
+   <strong><code>TRUE</code></strong>.
   </p>
 
   <div class="informalexample">
@@ -220,7 +220,7 @@ array(4) {
     <dd>
 
      <p class="para">
-      If set to <strong><code>true</code></strong>, a new key pair will be created when using
+      If set to <strong><code>TRUE</code></strong>, a new key pair will be created when using
       Diffie-Hellman parameters, thereby improving forward secrecy.
      </p>
     </dd>
@@ -233,7 +233,7 @@ array(4) {
     <dd>
 
      <p class="para">
-      If set to <strong><code>true</code></strong>, a new key pair will always be generated when ECDH
+      If set to <strong><code>TRUE</code></strong>, a new key pair will always be generated when ECDH
       cipher suites are negotiated. This improves forward secrecy.
      </p>
     </dd>
@@ -248,15 +248,15 @@ array(4) {
    It is now possible to select specific versions of SSL and TLS via the
    <code class="parameter">crypto_method</code> SSL context option or by specifying a
    specific transport when creating a stream wrapper (for example, by calling
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.stream-socket-client.php" class="function">stream_socket_client()</a></span> or
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.stream-socket-server.php" class="function">stream_socket_server()</a></span>).
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.stream-socket-client.html" class="function">stream_socket_client()</a></span> or
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.stream-socket-server.html" class="function">stream_socket_server()</a></span>).
   </p>
 
   <p class="para">
    The <code class="parameter">crypto_method</code> SSL context option accepts a
    bitmask enumerating the protocols that are permitted, as does the
    <code class="parameter">crypto_type</code> of
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.stream-socket-enable-crypto.php" class="function">stream_socket_enable_crypto()</a></span>.
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.stream-socket-enable-crypto.html" class="function">stream_socket_enable_crypto()</a></span>.
    
   </p>
 
@@ -301,10 +301,10 @@ array(4) {
  </div>
 
  <div class="sect2" id="migration56.openssl.default-certificate-paths">
-  <h3 class="title"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.openssl-get-cert-locations.php" class="function">openssl_get_cert_locations()</a></span> added</h3>
+  <h3 class="title"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.openssl-get-cert-locations.html" class="function">openssl_get_cert_locations()</a></span> added</h3>
 
   <p class="para">
-   The <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.openssl-get-cert-locations.php" class="function">openssl_get_cert_locations()</a></span> function has been
+   The <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.openssl-get-cert-locations.html" class="function">openssl_get_cert_locations()</a></span> function has been
    added: it returns the default locations PHP will search when looking for
    CA bundles.
   </p>
@@ -348,10 +348,10 @@ array(8) {
 
   <p class="para">
    Support has been added for generating, extracting and verifying signed
-   public key and challenges (SPKAC). <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.openssl-spki-new.php" class="function">openssl_spki_new()</a></span>,
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.openssl-spki-verify.php" class="function">openssl_spki_verify()</a></span>,
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.openssl-spki-export-challenge.php" class="function">openssl_spki_export_challenge()</a></span>, and
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.openssl-spki-export.php" class="function">openssl_spki_export()</a></span> have been added to create, verify
+   public key and challenges (SPKAC). <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.openssl-spki-new.html" class="function">openssl_spki_new()</a></span>,
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.openssl-spki-verify.html" class="function">openssl_spki_verify()</a></span>,
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.openssl-spki-export-challenge.html" class="function">openssl_spki_export_challenge()</a></span>, and
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.openssl-spki-export.html" class="function">openssl_spki_export()</a></span> have been added to create, verify
    export PEM public key and associated challenge from SPKAC's generated from
    a <code class="literal">KeyGen</code> HTML5 element.
   </p>

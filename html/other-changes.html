@@ -20,8 +20,8 @@
 
         <link href="//fonts.googleapis.com/css?family=Fira+Sans|Droid+Sans|Source+Sans+Pro" rel="stylesheet" type="text/css">
 
-        <link rel="stylesheet" href="./phpnet.css?1609711191" type="text/css" media="screen">
-        <link rel="stylesheet" href="./styles.css?1609711191" type="text/css" media="screen">
+        <link rel="stylesheet" href="./phpnet.css?1610232686" type="text/css" media="screen">
+        <link rel="stylesheet" href="./styles.css?1610232686" type="text/css" media="screen">
 
         <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
@@ -41,7 +41,7 @@
     <main class="info-main">
         <article id="layout-content" class="info-version">
     <header class="info-version-header">
-        <h1><a href="https://www.php.net/manual/en/migration80.other-changes.php" target="_blank">PHP 8.0</a></h1>
+        <h1><a href="https://www.php.net/manual/en/migration80.other-changes" target="_blank">PHP 8.0</a></h1>
     </header>
 
     <div id="migration80.other-changes" class="sect1">
@@ -326,7 +326,7 @@
 
 </div></article><article id="layout-content" class="info-version">
     <header class="info-version-header">
-        <h1><a href="https://www.php.net/manual/en/migration74.other-changes.php" target="_blank">PHP 7.4</a></h1>
+        <h1><a href="https://www.php.net/manual/en/migration74.other-changes" target="_blank">PHP 7.4</a></h1>
     </header>
 
     <div id="migration74.other-changes" class="sect1">
@@ -338,7 +338,7 @@
   <div class="sect3" id="migration74.other-changes.performance.core">
    <h4 class="title">PHP Core</h4>
    <p class="para">
-    A specialized VM opcode for the <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.array-key-exists.php" class="function">array_key_exists()</a></span>
+    A specialized VM opcode for the <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.array-key-exists.html" class="function">array_key_exists()</a></span>
     function has been added, which improves performance of this function
     if it can be statically resolved. In namespaced code, this may require
     writing <code class="literal">\array_key_exists()</code> or explicitly importing
@@ -349,7 +349,7 @@
   <div class="sect3" id="migration74.other-changes.performance.pcre">
    <h4 class="title">Regular Expressions (Perl-Compatible)</h4>
    <p class="para">
-    When <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.preg-match.php" class="function">preg_match()</a></span> in UTF-8 mode (<code class="literal">"u"</code> modifier)
+    When <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.preg-match.html" class="function">preg_match()</a></span> in UTF-8 mode (<code class="literal">"u"</code> modifier)
     is repeatedly called on the same string (but possibly different offsets),
     it will only be checked for UTF-8 validity once.
    </p>
@@ -359,12 +359,12 @@
  <div class="sect2" id="migration74.other-changes.ini">
   <h3 class="title">Changes to INI File Handling</h3>
   <p class="para">
-   <a target="_blank" href="https://www.php.net/manual/en/ini.core.php#ini.zend.exception-ignore-args" class="link">zend.exception_ignore_args</a> is a new INI directive
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/ini.core.html#ini.zend.exception-ignore-args" class="link">zend.exception_ignore_args</a> is a new INI directive
    for including or excluding arguments from stack traces generated
    from exceptions.
   </p>
   <p class="para">
-   <a target="_blank" href="https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.preload-user" class="link">opcache.preload_user</a> is a new INI directive
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/opcache.configuration.html#ini.opcache.preload-user" class="link">opcache.preload_user</a> is a new INI directive
    for specifying the user account under which preloading
    code is execute if it would otherwise be run as root (which is not
    allowed for security reasons).
@@ -633,21 +633,21 @@
  <div class="sect2" id="migration74.other-changes.csv">
   <h3 class="title">CSV escaping</h3>
   <p class="para">
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.fputcsv.php" class="function">fputcsv()</a></span>,
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.fgetcsv.php" class="function">fgetcsv()</a></span>,
-   <span class="methodname"><a target="_blank" href="https://www.php.net/manual/en/splfileobject.fputcsv.php" class="methodname">SplFileObject::fputcsv()</a></span>, 
-   <span class="methodname"><a target="_blank" href="https://www.php.net/manual/en/splfileobject.fgetcsv.php" class="methodname">SplFileObject::fgetcsv()</a></span>, and
-   <span class="methodname"><a target="_blank" href="https://www.php.net/manual/en/splfileobject.setcsvcontrol.php" class="methodname">SplFileObject::setCsvControl()</a></span>
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.fputcsv.html" class="function">fputcsv()</a></span>,
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.fgetcsv.html" class="function">fgetcsv()</a></span>,
+   <span class="methodname"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/splfileobject.fputcsv.html" class="methodname">SplFileObject::fputcsv()</a></span>, 
+   <span class="methodname"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/splfileobject.fgetcsv.html" class="methodname">SplFileObject::fgetcsv()</a></span>, and
+   <span class="methodname"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/splfileobject.setcsvcontrol.html" class="methodname">SplFileObject::setCsvControl()</a></span>
    now accept an empty string as <code class="literal">$escape</code> argument,
    which disables the proprietary PHP escaping mechanism.
   </p>
   <p class="para">
-   The behavior of <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.str-getcsv.php" class="function">str_getcsv()</a></span> has been
+   The behavior of <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.str-getcsv.html" class="function">str_getcsv()</a></span> has been
    adjusted accordingly (formerly, an empty string was identical
    to using the default).
   </p>
   <p class="para">
-   <span class="methodname"><a target="_blank" href="https://www.php.net/manual/en/splfileobject.getcsvcontrol.php" class="methodname">SplFileObject::getCsvControl()</a></span> now may also
+   <span class="methodname"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/splfileobject.getcsvcontrol.html" class="methodname">SplFileObject::getCsvControl()</a></span> now may also
    return an empty string for the third array element, accordingly.
   </p>
  </div>
@@ -655,7 +655,7 @@
  <div class="sect2" id="migration74.other-changes.filter">
   <h3 class="title">Data Filtering</h3>
   <p class="para">
-   The <a target="_blank" href="https://www.php.net/manual/en/book.filter.php" class="link">filter</a> extension no longer exposes
+   The <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.filter.html" class="link">filter</a> extension no longer exposes
    <strong class="option configure">--with-pcre-dir</strong> for Unix builds and can now reliably
    be built as shared when using <strong class="command">./configure</strong>
   </p>
@@ -664,7 +664,7 @@
  <div class="sect2" id="migration74.other-changes.gd">
   <h3 class="title">GD</h3>
   <p class="para">
-   The behavior of <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.imagecropauto.php" class="function">imagecropauto()</a></span> in the bundled
+   The behavior of <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.imagecropauto.html" class="function">imagecropauto()</a></span> in the bundled
    libgd has been synced with that of system libgd:
   </p>
   <ul class="itemizedlist"><li class="listitem">
@@ -680,12 +680,12 @@
    </li>
   </ul><p class="para">
    The default <code class="literal">$mode</code> parameter of
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.imagecropauto.php" class="function">imagecropauto()</a></span> has been changed to
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.imagecropauto.html" class="function">imagecropauto()</a></span> has been changed to
    <strong><code>IMG_CROP_DEFAULT</code></strong>; passing <code class="literal">-1</code>
    is now deprecated.
   </p>
   <p class="para">
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.imagescale.php" class="function">imagescale()</a></span> now supports aspect ratio preserving
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.imagescale.html" class="function">imagescale()</a></span> now supports aspect ratio preserving
    scaling to a fixed height by passing <code class="literal">-1</code>
    as <code class="literal">$new_width</code>.
   </p>
@@ -694,21 +694,21 @@
  <div class="sect2" id="migration74.other-changes.hash">
   <h3 class="title">HASH Message Digest Framework</h3>
   <p class="para">
-   The <a target="_blank" href="https://www.php.net/manual/en/book.hash.php" class="link">hash</a> extension cannot be disabled
+   The <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.hash.html" class="link">hash</a> extension cannot be disabled
    anymore and is always an integral part of any PHP build, similar to
-   the <a target="_blank" href="https://www.php.net/manual/en/book.datetime.php" class="link">date</a> extension.
+   the <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.datetime.html" class="link">date</a> extension.
   </p>
  </div>
 
  <div class="sect2" id="migration74.other-changes.intl">
   <h3 class="title">Intl</h3>
   <p class="para">
-   The <a target="_blank" href="https://www.php.net/manual/en/book.intl.php" class="link">intl</a> extension
+   The <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.intl.html" class="link">intl</a> extension
    now requires at least ICU 50.1.
   </p>
   <p class="para">
-   <a target="_blank" href="https://www.php.net/manual/en/class.resourcebundle.php" class="classname">ResourceBundle</a> now implements
-   <span class="interfacename"><a target="_blank" href="https://www.php.net/manual/en/class.countable.php" class="interfacename">Countable</a></span>.
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/class.resourcebundle.html" class="classname">ResourceBundle</a> now implements
+   <span class="interfacename"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/class.countable.html" class="interfacename">Countable</a></span>.
   </p>
  </div>
 
@@ -742,15 +742,15 @@
    The <strong class="option configure">--disable-opcache-file</strong> and
    <strong class="option configure">--enable-opcache-file</strong> configure options
    have been removed in favor of the
-   <a target="_blank" href="https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.file-cache" class="link">opcache.file_cache</a> INI directive.
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/opcache.configuration.html#ini.opcache.file-cache" class="link">opcache.file_cache</a> INI directive.
   </p>
  </div>
 
  <div class="sect2" id="migration74.other-changes.password">
   <h3 class="title">Password Hashing</h3>
   <p class="para">
-   The <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.password-hash.php" class="function">password_hash()</a></span> and <span class="function"> functions
-   now accept nullable <span class="type">string</span> and <span class="type">int</span> for <code class="literal">$algo</code> argument.
+   The <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.password-hash.html" class="function">password_hash()</a></span> and <span class="function"> functions
+   now accept nullable <span class="type"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/language.types.string.html" class="type string">string</a></span> and <span class="type"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/language.types.integer.html" class="type integer">integer</a></span> for <code class="literal">$algo</code> argument.
   </span></p>
  </div>
 
@@ -776,11 +776,11 @@
    <code class="literal">IS_PROTECTED</code>,
    <code class="literal">IS_PUBLIC</code>, and
    <code class="literal">IS_STATIC</code>) on the
-   <a target="_blank" href="https://www.php.net/manual/en/class.reflectionclass.php" class="classname">ReflectionClass</a>,
-   <a target="_blank" href="https://www.php.net/manual/en/class.reflectionfunction.php" class="classname">ReflectionFunction</a>,
-   <a target="_blank" href="https://www.php.net/manual/en/class.reflectionmethod.php" class="classname">ReflectionMethod</a>,
-   <a target="_blank" href="https://www.php.net/manual/en/class.reflectionobject.php" class="classname">ReflectionObject</a>, and
-   <a target="_blank" href="https://www.php.net/manual/en/class.reflectionproperty.php" class="classname">ReflectionProperty</a>
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/class.reflectionclass.html" class="classname">ReflectionClass</a>,
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/class.reflectionfunction.html" class="classname">ReflectionFunction</a>,
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/class.reflectionmethod.html" class="classname">ReflectionMethod</a>,
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/class.reflectionobject.html" class="classname">ReflectionObject</a>, and
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/class.reflectionproperty.html" class="classname">ReflectionProperty</a>
    classes have changed.
   </p>
  </div>
@@ -788,8 +788,8 @@
  <div class="sect2" id="migration74.other-changes.simplexml">
   <h3 class="title">SimpleXML</h3>
   <p class="para">
-   <a target="_blank" href="https://www.php.net/manual/en/class.simplexmlelement.php" class="classname">SimpleXMLElement</a> now implements
-   <span class="interfacename"><a target="_blank" href="https://www.php.net/manual/en/class.countable.php" class="interfacename">Countable</a></span>.
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/class.simplexmlelement.html" class="classname">SimpleXMLElement</a> now implements
+   <span class="interfacename"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/class.countable.html" class="interfacename">Countable</a></span>.
   </p>
  </div>
 
@@ -797,14 +797,14 @@
   <h3 class="title">SQLite3</h3>
   <p class="para">
    The bundled libsqlite has been removed. To build the
-   <a target="_blank" href="https://www.php.net/manual/en/book.sqlite3.php" class="link">SQLite3</a> extension a
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.sqlite3.html" class="link">SQLite3</a> extension a
    system libsqlite3 ≥ 3.7.4 is now required. To build the
-   <a target="_blank" href="https://www.php.net/manual/en/ref.pdo-sqlite.php" class="link">PDO_SQLite</a> extension
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/ref.pdo-sqlite.html" class="link">PDO_SQLite</a> extension
    a system libsqlite3 ≥ 3.5.0 is now required.
   </p>
   <p class="para">
-   Serialization and unserialization of <a target="_blank" href="https://www.php.net/manual/en/class.sqlite3.php" class="classname">SQLite3</a>,
-   <a target="_blank" href="https://www.php.net/manual/en/class.sqlite3stmt.php" class="classname">SQLite3Stmt</a> and <a target="_blank" href="https://www.php.net/manual/en/class.sqlite3result.php" class="classname">SQLite3Result</a>
+   Serialization and unserialization of <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/class.sqlite3.html" class="classname">SQLite3</a>,
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/class.sqlite3stmt.html" class="classname">SQLite3Stmt</a> and <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/class.sqlite3result.html" class="classname">SQLite3Result</a>
    is now explicitly forbidden. Formerly, serialization of instances of
    these classes was possible, but unserialization yielded unusable objects.
   </p>
@@ -819,13 +819,13 @@
   <p class="para">
    The bundled libzip library has been removed.
    A system libzip &gt;= 0.11 is now necessary to build the
-   <a target="_blank" href="https://www.php.net/manual/en/book.zip.php" class="link">zip</a> extension.
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.zip.html" class="link">zip</a> extension.
   </p>
  </div>
 
 </div></article><article id="layout-content" class="info-version">
     <header class="info-version-header">
-        <h1><a href="https://www.php.net/manual/en/migration73.other-changes.php" target="_blank">PHP 7.3</a></h1>
+        <h1><a href="https://www.php.net/manual/en/migration73.other-changes" target="_blank">PHP 7.3</a></h1>
     </header>
 
     <div id="migration73.other-changes" class="sect1">
@@ -838,10 +838,10 @@
    <h4 class="title">Set(raw)cookie accepts $option Argument</h4>
 
    <p class="para">
-    <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.setcookie.php" class="function">setcookie()</a></span> and <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.setrawcookie.php" class="function">setrawcookie()</a></span> now also
+    <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.setcookie.html" class="function">setcookie()</a></span> and <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.setrawcookie.html" class="function">setrawcookie()</a></span> now also
     support the following signature:
     </p><div class="methodsynopsis dc-description">
-     <span class="methodname"><a target="_blank" href="https://www.php.net/manual/en/function.setcookie.php" class="methodname">setcookie</a></span>
+     <span class="methodname"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.setcookie.html" class="methodname">setcookie</a></span>
       ( <span class="methodparam"><span class="type">string</span> <code class="parameter">$name</code></span>
      [, <span class="methodparam"><span class="type">string</span> <code class="parameter">$value</code><span class="initializer"> = ""</span></span>
      [, <span class="methodparam"><span class="type">array</span> <code class="parameter">$options</code><span class="initializer"> = []</span></span>
@@ -859,10 +859,10 @@
 
    <p class="para">
     The following ini Directives have been added to customize logging, if
-    <a target="_blank" href="https://www.php.net/manual/en/errorfunc.configuration.php#ini.error-log" class="link">error_log</a> is set to
+    <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/errorfunc.configuration.html#ini.error-log" class="link">error_log</a> is set to
     <code class="literal">syslog</code>:
     </p><dl><dt>
-<a target="_blank" href="https://www.php.net/manual/en/errorfunc.configuration.php#ini.syslog.facility" class="link">syslog.facility</a></dt>
+<a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/errorfunc.configuration.html#ini.syslog.facility" class="link">syslog.facility</a></dt>
 
       <dd>
 
@@ -874,7 +874,7 @@
      
      
       <dt>
-<a target="_blank" href="https://www.php.net/manual/en/errorfunc.configuration.php#ini.syslog.filter" class="link">syslog.filter</a></dt>
+<a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/errorfunc.configuration.html#ini.syslog.filter" class="link">syslog.filter</a></dt>
 
       <dd>
 
@@ -888,7 +888,7 @@
      
      
       <dt>
-<a target="_blank" href="https://www.php.net/manual/en/errorfunc.configuration.php#ini.syslog.ident" class="link">syslog.ident</a></dt>
+<a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/errorfunc.configuration.html#ini.syslog.ident" class="link">syslog.ident</a></dt>
 
       <dd>
 
@@ -904,7 +904,7 @@
    <h4 class="title">Garbage Collection</h4>
 
    <p class="para">
-    The <a target="_blank" href="https://www.php.net/manual/en/features.gc.collecting-cycles.php" class="link">cyclic GC</a> has been
+    The <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/features.gc.collecting-cycles.html" class="link">cyclic GC</a> has been
     enhanced, which may result in considerable performance improvements.
    </p>
   </div>
@@ -913,19 +913,19 @@
    <h4 class="title">Miscellaneous</h4>
 
    <p class="para">
-    <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.var-export.php" class="function">var_export()</a></span> now exports <strong class="classname">stdClass</strong>
+    <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.var-export.html" class="function">var_export()</a></span> now exports <strong class="classname">stdClass</strong>
     objects as an array cast to an object (<code class="code">(object) array( ... )</code>), rather
     than using the nonexistent method <span class="methodname"><strong>stdClass::__setState()</strong></span>.
    </p>
 
    <p class="para">
-    <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.debug-zval-dump.php" class="function">debug_zval_dump()</a></span> was changed to display recursive arrays
-    and objects in the same way as <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.var-dump.php" class="function">var_dump()</a></span>. Now, it doesn't
+    <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.debug-zval-dump.html" class="function">debug_zval_dump()</a></span> was changed to display recursive arrays
+    and objects in the same way as <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.var-dump.html" class="function">var_dump()</a></span>. Now, it doesn't
     display them twice.
    </p>
 
    <p class="para">
-    <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.array-push.php" class="function">array_push()</a></span> and <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.array-unshift.php" class="function">array_unshift()</a></span> can
+    <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.array-push.html" class="function">array_push()</a></span> and <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.array-unshift.html" class="function">array_unshift()</a></span> can
     now also be called with a single argument, which is particularly convenient
     wrt. the spread operator.
    </p>
@@ -947,7 +947,7 @@
   <h3 class="title">FastCGI Process Manager</h3>
 
   <p class="para">
-   The <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.getallheaders.php" class="function">getallheaders()</a></span> function is now also available.
+   The <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.getallheaders.html" class="function">getallheaders()</a></span> function is now also available.
   </p>
  </div>
 
@@ -993,7 +993,7 @@
 
   <p class="para">
    Introduced <strong><code>Normalizer::FORM_KC_CF</code></strong> as
-   <span class="methodname"><a target="_blank" href="https://www.php.net/manual/en/normalizer.normalize.php" class="methodname">Normalizer::normalize()</a></span> argument for
+   <span class="methodname"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/normalizer.normalize.html" class="methodname">Normalizer::normalize()</a></span> argument for
    <code class="literal">NFKC_Casefold</code> normalization; available when linked with
    ICU ≥ 56.
   </p>
@@ -1004,11 +1004,11 @@
 
   <p class="para">
    A new flag has been added, <strong><code>JSON_THROW_ON_ERROR</code></strong>, which
-   can be used with <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.json-decode.php" class="function">json_decode()</a></span> or
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.json-encode.php" class="function">json_encode()</a></span> and causes these functions to throw the new
-   <a target="_blank" href="https://www.php.net/manual/en/class.jsonexception.php" class="classname">JsonException</a> upon an error, instead of setting the
+   can be used with <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.json-decode.html" class="function">json_decode()</a></span> or
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.json-encode.html" class="function">json_encode()</a></span> and causes these functions to throw the new
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/class.jsonexception.html" class="classname">JsonException</a> upon an error, instead of setting the
    global error state that is retrieved with
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.json-last-error.php" class="function">json_last_error()</a></span> and <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.json-last-error-msg.php" class="function">json_last_error_msg()</a></span>.
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.json-last-error.html" class="function">json_last_error()</a></span> and <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.json-last-error-msg.html" class="function">json_last_error_msg()</a></span>.
    <strong><code>JSON_PARTIAL_OUTPUT_ON_ERROR</code></strong> takes precedence over
    <strong><code>JSON_THROW_ON_ERROR</code></strong>.
   </p>
@@ -1056,14 +1056,14 @@
   <h3 class="title">Regular Expressions (Perl-Compatible)</h3>
 
   <p class="para">
-   The <a target="_blank" href="https://www.php.net/manual/en/book.pcre.php" class="link">PCRE extension</a> has been upgraded to
+   The <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.pcre.html" class="link">PCRE extension</a> has been upgraded to
    PCRE2, which may cause minor behavioral changes (for instance, character
    ranges in classes are now more strictly interpreted), and augments the
    existing regular expression syntax.
   </p>
 
   <p class="para">
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.preg-quote.php" class="function">preg_quote()</a></span> now also escapes the <code class="literal">'#'</code>
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.preg-quote.html" class="function">preg_quote()</a></span> now also escapes the <code class="literal">'#'</code>
    character.
   </p>
  </div>
@@ -1100,10 +1100,10 @@
   <h3 class="title">Session Handling</h3>
 
   <p class="para">
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.session-set-cookie-params.php" class="function">session_set_cookie_params()</a></span> now also supports the
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.session-set-cookie-params.html" class="function">session_set_cookie_params()</a></span> now also supports the
    following signature:
    </p><div class="methodsynopsis dc-description">
-    <span class="methodname"><a target="_blank" href="https://www.php.net/manual/en/function.session-set-cookie-params.php" class="methodname">session_set_cookie_params</a></span>
+    <span class="methodname"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.session-set-cookie-params.html" class="methodname">session_set_cookie_params</a></span>
      ( <span class="methodparam"><span class="type">array</span> <code class="parameter">$options</code></span>
     ) : <span class="type">bool</span></div>
 
@@ -1111,7 +1111,7 @@
    any of the keys <code class="literal">"lifetime"</code>, <code class="literal">"path"</code>,
    <code class="literal">"domain"</code>, <code class="literal">"secure"</code>,
    <code class="literal">"httponly"</code> and <code class="literal">"samesite"</code>. Accordingly,
-   the return value of <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.session-get-cookie-params.php" class="function">session_get_cookie_params()</a></span> now also
+   the return value of <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.session-get-cookie-params.html" class="function">session_get_cookie_params()</a></span> now also
    has an element with the key <code class="literal">"samesite"</code>.
    Furthermore, the new <code class="literal">session.cookie_samesite</code> ini option to
    set the default of the SameSite directive for cookies has been added. It
@@ -1125,9 +1125,9 @@
   <h3 class="title">Tidy</h3>
 
   <p class="para">
-   Building against <a target="_blank" href="https://www.php.net/manual/en/https://github.com/petdance/tidyp" class="link external">» tidyp</a> is now also
+   Building against <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/https://github.com/petdance/tidyp" class="link external">» tidyp</a> is now also
    supported transparently. Since tidyp offers no API to get the release date,
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/tidy.getrelease.php" class="function">tidy_get_release()</a></span> and <span class="methodname"><a target="_blank" href="https://www.php.net/manual/en/tidy.getrelease.php" class="methodname">tidy::getRelease()</a></span>
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/tidy.getrelease.html" class="function">tidy_get_release()</a></span> and <span class="methodname"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/tidy.getrelease.html" class="methodname">tidy::getRelease()</a></span>
    return <code class="literal">'unknown'</code> in this case.
   </p>
  </div>
@@ -1136,7 +1136,7 @@
   <h3 class="title">XML Parser</h3>
 
   <p class="para">
-   The return value of the <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.xml-set-external-entity-ref-handler.php" class="function">xml_set_external_entity_ref_handler()</a></span>
+   The return value of the <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.xml-set-external-entity-ref-handler.html" class="function">xml_set_external_entity_ref_handler()</a></span>
    callback is no longer ignored if the extension has been built against libxml.
    Formerly, the return value has been ignored, and parsing did never stop.
   </p>
@@ -1155,36 +1155,36 @@
   <h3 class="title">Zlib Compression</h3>
 
   <p class="para">
-   The zlib/level context option for the <a target="_blank" href="https://www.php.net/manual/en/wrappers.compression.php" class="link">compress.zlib wrapper</a> to facilitate
+   The zlib/level context option for the <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/wrappers.compression.html" class="link">compress.zlib wrapper</a> to facilitate
    setting the desired compression level has been added.
   </p>
  </div>
 
 </div></article><article id="layout-content" class="info-version">
     <header class="info-version-header">
-        <h1><a href="https://www.php.net/manual/en/migration72.other-changes.php" target="_blank">PHP 7.2</a></h1>
+        <h1><a href="https://www.php.net/manual/en/migration72.other-changes" target="_blank">PHP 7.2</a></h1>
     </header>
 
     <div id="migration72.other-changes" class="sect1">
  <h2 class="title">Other changes</h2>
 
  <div class="sect2" id="migration72.other-changes.utf8_-functions-to-ext-standard">
-  <h3 class="title">Moving of <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.utf8-encode.php" class="function">utf8_encode()</a></span> and <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.utf8-decode.php" class="function">utf8_decode()</a></span></h3>
+  <h3 class="title">Moving of <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.utf8-encode.html" class="function">utf8_encode()</a></span> and <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.utf8-decode.html" class="function">utf8_decode()</a></span></h3>
 
   <p class="para">
-   The <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.utf8-encode.php" class="function">utf8_encode()</a></span> and <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.utf8-decode.php" class="function">utf8_decode()</a></span>
+   The <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.utf8-encode.html" class="function">utf8_encode()</a></span> and <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.utf8-decode.html" class="function">utf8_decode()</a></span>
    functions have now been moved to the standard extension as string functions, whereas before 
-   the <a target="_blank" href="https://www.php.net/manual/en/book.xml.php" class="link">XML</a> extension was required for them to be available.
+   the <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.xml.html" class="link">XML</a> extension was required for them to be available.
   </p>
  </div>
 
  <div class="sect2" id="migration72.other-changes.mail">
-  <h3 class="title">Changes to <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.mail.php" class="function">mail()</a></span> and <span class="function"><strong>mb_sendmail()</strong></span></h3>
+  <h3 class="title">Changes to <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.mail.html" class="function">mail()</a></span> and <span class="function"><strong>mb_sendmail()</strong></span></h3>
 
   <p class="para">
-   The $additional_headers parameter of <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.mail.php" class="function">mail()</a></span> and
-   <span class="function"><strong>mb_sendmail()</strong></span> now also accepts an <span class="type">array</span>
-   instead of a <span class="type">string</span>.
+   The $additional_headers parameter of <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.mail.html" class="function">mail()</a></span> and
+   <span class="function"><strong>mb_sendmail()</strong></span> now also accepts an <span class="type"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/language.types.array.html" class="type array">array</a></span>
+   instead of a <span class="type"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/language.types.string.html" class="type string">string</a></span>.
   </p>
  </div>
 
@@ -1192,7 +1192,7 @@
   <h3 class="title">LMDB support</h3>
 
   <p class="para">
-   The <a target="_blank" href="https://www.php.net/manual/en/book.dba.php" class="link">DBA</a> extension now has support for LMDB.
+   The <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.dba.html" class="link">DBA</a> extension now has support for LMDB.
   </p>
  </div>
 
@@ -1226,39 +1226,39 @@
   </ul></div>
 
  <div class="sect2" id="migration72.other-changes.image">
-  <h3 class="title">Changes to <a target="_blank" href="https://www.php.net/manual/en/book.image.php" class="link">GD</a></h3>
+  <h3 class="title">Changes to <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.image.html" class="link">GD</a></h3>
 
   <ul class="itemizedlist"><li class="listitem">
     <span class="simpara">
-     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.imageantialias.php" class="function">imageantialias()</a></span> is now also available if compiled with
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.imageantialias.html" class="function">imageantialias()</a></span> is now also available if compiled with
      a system libgd.
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.imagegd.php" class="function">imagegd()</a></span> stores truecolor images as real truecolor
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.imagegd.html" class="function">imagegd()</a></span> stores truecolor images as real truecolor
      images. Formerly, they have been converted to palette.
     </span>
    </li>
   </ul></div>
 
  <div class="sect2" id="migration72.other-changes.mcrypt">
-  <h3 class="title">Moving <a target="_blank" href="https://www.php.net/manual/en/book.mcrypt.php" class="link">MCrypt</a> to PECL</h3>
+  <h3 class="title">Moving <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.mcrypt.html" class="link">MCrypt</a> to PECL</h3>
 
   <p class="para">
-   The <a target="_blank" href="https://www.php.net/manual/en/book.mcrypt.php" class="link">MCrypt</a> extension has now been moved
+   The <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.mcrypt.html" class="link">MCrypt</a> extension has now been moved
    out of the core to PECL. Given the mcrypt library has not seen any updates
    since 2007, its usage is highly discouraged. Instead, either the
-   <a target="_blank" href="https://www.php.net/manual/en/book.openssl.php" class="link">OpenSSL</a> or <a target="_blank" href="https://www.php.net/manual/en/book.sodium.php" class="link">Sodium</a>
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.openssl.html" class="link">OpenSSL</a> or <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.sodium.html" class="link">Sodium</a>
    extension should be used.
   </p>
  </div>
 
  <div class="sect2" id="migration72.other-changes.session-module-name">
-  <h3 class="title"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.session-module-name.php" class="function">session_module_name()</a></span></h3>
+  <h3 class="title"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.session-module-name.html" class="function">session_module_name()</a></span></h3>
 
   <p class="para">
-   Passing <code class="literal">"user"</code> to <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.session-module-name.php" class="function">session_module_name()</a></span>
+   Passing <code class="literal">"user"</code> to <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.session-module-name.html" class="function">session_module_name()</a></span>
    now raises an error of level <strong><code>E_RECOVERABLE_ERROR</code></strong>. Formerly,
    this has been silently ignored.
   </p>
@@ -1266,7 +1266,7 @@
 
 </div></article><article id="layout-content" class="info-version">
     <header class="info-version-header">
-        <h1><a href="https://www.php.net/manual/en/migration71.other-changes.php" target="_blank">PHP 7.1</a></h1>
+        <h1><a href="https://www.php.net/manual/en/migration71.other-changes" target="_blank">PHP 7.1</a></h1>
     </header>
 
     <div id="migration71.other-changes" class="sect1">
@@ -1457,18 +1457,18 @@ string(1) "@"
  </div>
 
  <div class="sect2" id="migration71.other-changes.typeerror-error-messages">
-  <h3 class="title">More informative <a target="_blank" href="https://www.php.net/manual/en/class.typeerror.php" class="classname">TypeError</a> messages when <strong><code>null</code></strong> is allowed</h3>
+  <h3 class="title">More informative <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/class.typeerror.html" class="classname">TypeError</a> messages when <strong><code>NULL</code></strong> is allowed</h3>
   <p class="para">
-   <a target="_blank" href="https://www.php.net/manual/en/class.typeerror.php" class="classname">TypeError</a> exceptions for arg_info type checks will
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/class.typeerror.html" class="classname">TypeError</a> exceptions for arg_info type checks will
    now provide more informative error messages. If the parameter type or return
-   type accepts <strong><code>null</code></strong> (by either having a default value of <strong><code>null</code></strong> or being a
+   type accepts <strong><code>NULL</code></strong> (by either having a default value of <strong><code>NULL</code></strong> or being a
    nullable type), then the error message will now mention this with a message
    of "must be ... or null" or "must ... or be null."
   </p>
  </div>
 </div></article><article id="layout-content" class="info-version">
     <header class="info-version-header">
-        <h1><a href="https://www.php.net/manual/en/migration70.other-changes.php" target="_blank">PHP 7.0</a></h1>
+        <h1><a href="https://www.php.net/manual/en/migration70.other-changes" target="_blank">PHP 7.0</a></h1>
     </header>
 
     <div id="migration70.other-changes" class="sect1">

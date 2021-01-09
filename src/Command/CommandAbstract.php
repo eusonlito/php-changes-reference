@@ -22,6 +22,11 @@ abstract class CommandAbstract
     /**
      * @const
      */
+    protected const URL_DOCS_LEGACY = 'https://php-legacy-docs.zend.com/manual/php5/en';
+
+    /**
+     * @const
+     */
     protected const PATH_ASSET = PATH_BASE.'/src/views/assets';
 
     /**
@@ -33,6 +38,11 @@ abstract class CommandAbstract
      * @const
      */
     protected const PATH_CACHE_CHUNK = PATH_BASE.'/cache/chunk';
+
+    /**
+     * @const
+     */
+    protected const PATH_CACHE_REMOTE = PATH_BASE.'/cache/remote';
 
     /**
      * @const
@@ -77,18 +87,27 @@ abstract class CommandAbstract
      */
     protected function dom(string $file): DomHtml
     {
-        return new DomHtml(file_get_contents($file));
+        return new DomHtml($this->fileRead($file));
+    }
+
+    /**
+     * @param string $file
+     *
+     * @return string
+     */
+    protected function fileRead(string $file): string
+    {
+        return FileFilesystem::read($file);
     }
 
     /**
      * @param string $file
      * @param string $contents
-     * @param bool $remote = false
      *
      * @return void
      */
-    protected function fileWrite(string $file, string $contents, bool $remote = false): void
+    protected function fileWrite(string $file, string $contents): void
     {
-        FileFilesystem::write($file, $contents, $remote);
+        FileFilesystem::write($file, $contents);
     }
 }

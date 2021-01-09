@@ -87,7 +87,7 @@ class AssetCss extends CommandAbstract
 
         MessageConsole::echo(sprintf("Copy <color:green>%s</color> into <color:green>%s</color>\n", $this->removePathBase($source), $this->removePathBase($target)));
 
-        $this->fileWrite($target, $source, true);
+        $this->fileWrite($target, $this->fileRead($source));
     }
 
     /**
@@ -113,6 +113,6 @@ class AssetCss extends CommandAbstract
     {
         $image = str_replace(["'", '"', '../'], '', $image);
 
-        $this->fileWrite($this->path('images/'.basename($image)), static::URL_BASE.'/'.$image, true);
+        $this->fileWrite($this->path('images/'.basename($image)), static::URL_BASE.'/'.$image);
     }
 }

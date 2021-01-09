@@ -20,8 +20,8 @@
 
         <link href="//fonts.googleapis.com/css?family=Fira+Sans|Droid+Sans|Source+Sans+Pro" rel="stylesheet" type="text/css">
 
-        <link rel="stylesheet" href="./phpnet.css?1609711191" type="text/css" media="screen">
-        <link rel="stylesheet" href="./styles.css?1609711191" type="text/css" media="screen">
+        <link rel="stylesheet" href="./phpnet.css?1610232686" type="text/css" media="screen">
+        <link rel="stylesheet" href="./styles.css?1610232686" type="text/css" media="screen">
 
         <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
@@ -41,7 +41,7 @@
     <main class="info-main">
         <article id="layout-content" class="info-version">
     <header class="info-version-header">
-        <h1><a href="https://www.php.net/manual/en/migration80.deprecated.php" target="_blank">PHP 8.0</a></h1>
+        <h1><a href="https://www.php.net/manual/en/migration80.deprecated" target="_blank">PHP 8.0</a></h1>
     </header>
 
     <div id="migration80.deprecated" class="sect1">
@@ -103,13 +103,13 @@
    <li class="listitem">
     <p class="para">
      <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.enchant-dict-add-to-personal.php" class="function">enchant_dict_add_to_personal()</a></span> is deprecated; use
-     <span class="function"><strong>enchant_dict_add()</strong></span> instead.
+     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.enchant-dict-add.php" class="function">enchant_dict_add()</a></span> instead.
     </p>
    </li>
    <li class="listitem">
     <p class="para">
      <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.enchant-dict-is-in-session.php" class="function">enchant_dict_is_in_session()</a></span> is deprecated; use
-     <span class="function"><strong>enchant_dict_is_added()</strong></span> instead.
+     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.enchant-dict-is-added.php" class="function">enchant_dict_is_added()</a></span> instead.
     </p>
    </li>
    <li class="listitem">
@@ -141,8 +141,8 @@
 
   <ul class="itemizedlist"><li class="listitem">
     <p class="para">
-     The constant <strong><code>PG_VERSION_STR</code></strong> now has the same value as
-     <strong><code>PG_VERSION</code></strong>, and thus is deprecated.
+     The constant <strong><code>PGSQL_LIBPQ_VERSION_STR</code></strong> now has the same value as
+     <strong><code>PGSQL_LIBPQ_VERSION</code></strong>, and thus is deprecated.
     </p>
    </li>
    <li class="listitem">
@@ -249,7 +249,7 @@
 
 </div></article><article id="layout-content" class="info-version">
     <header class="info-version-header">
-        <h1><a href="https://www.php.net/manual/en/migration74.deprecated.php" target="_blank">PHP 7.4</a></h1>
+        <h1><a href="https://www.php.net/manual/en/migration74.deprecated" target="_blank">PHP 7.4</a></h1>
     </header>
 
     <div id="migration74.deprecated" class="sect1">
@@ -276,18 +276,6 @@
 
     </div>
    
-   <p class="para">
-    Parentheses are <em class="emphasis">not</em> required when nesting into the middle operand,
-    as this is always unambiguous and not affected by associativity:
-    </p><div class="informalexample">
-     <div class="example-contents">
-<div class="phpcode"><code><span style="color: #000000">
-1 ? 2 ? 3 : 4 : 5 // ok</span>
-</code></div>
-     </div>
-
-    </div>
-   
   </div>
 
   <div class="sect3" id="migration74.deprecated.core.array-string-access-curly-brace">
@@ -301,15 +289,15 @@
   </div>
 
   <div class="sect3" id="migration74.deprecated.core.real">
-   <h4 class="title">(real) cast and <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.is-real.php" class="function">is_real()</a></span> function</h4>
+   <h4 class="title">(real) cast and <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.is-real.html" class="function">is_real()</a></span> function</h4>
 
    <p class="para">
     The <code class="literal">(real)</code> cast is deprecated,
     use <code class="literal">(float)</code> instead.
    </p>
    <p class="para">
-    The <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.is-real.php" class="function">is_real()</a></span> function is also deprecated,
-    use <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.is-float.php" class="function">is_float()</a></span> instead.
+    The <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.is-real.html" class="function">is_real()</a></span> function is also deprecated,
+    use <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.is-float.html" class="function">is_float()</a></span> instead.
    </p>
   </div>
 
@@ -337,7 +325,7 @@
    <h4 class="title">allow_url_include INI option</h4>
 
    <p class="para">
-    The <a target="_blank" href="https://www.php.net/manual/en/filesystem.configuration.php#ini.allow-url-include" class="link">allow_url_include</a>
+    The <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/filesystem.configuration.html#ini.allow-url-include" class="link">allow_url_include</a>
     ini directive is deprecated. Enabling it will generate
     a deprecation notice at startup.
    </p>
@@ -347,9 +335,9 @@
    <h4 class="title">Invalid characters in base conversion functions</h4>
 
    <p class="para">
-    Passing invalid characters to <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.base-convert.php" class="function">base_convert()</a></span>,
-    <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.bindec.php" class="function">bindec()</a></span>, <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.octdec.php" class="function">octdec()</a></span> and
-    <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.hexdec.php" class="function">hexdec()</a></span> will now generate a deprecation notice.
+    Passing invalid characters to <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.base-convert.html" class="function">base_convert()</a></span>,
+    <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.bindec.html" class="function">bindec()</a></span>, <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.octdec.html" class="function">octdec()</a></span> and
+    <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.hexdec.html" class="function">hexdec()</a></span> will now generate a deprecation notice.
     The result will still be computed as if the invalid characters did not exist.
     Leading and trailing whitespace, as well as prefixes of type 0x (depending on base)
     continue to be allowed.
@@ -357,11 +345,11 @@
   </div>
 
   <div class="sect3" id="migration74.deprecated.core.array-key-exists-objects">
-   <h4 class="title">Using <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.array-key-exists.php" class="function">array_key_exists()</a></span> on objects</h4>
+   <h4 class="title">Using <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.array-key-exists.html" class="function">array_key_exists()</a></span> on objects</h4>
 
    <p class="para">
-    Using <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.array-key-exists.php" class="function">array_key_exists()</a></span> on objects is deprecated.
-    Instead either <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.isset.php" class="function">isset()</a></span> or <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.property-exists.php" class="function">property_exists()</a></span>
+    Using <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.array-key-exists.html" class="function">array_key_exists()</a></span> on objects is deprecated.
+    Instead either <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.isset.html" class="function">isset()</a></span> or <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.property-exists.html" class="function">property_exists()</a></span>
     should be used.
    </p>
   </div>
@@ -370,53 +358,53 @@
    <h4 class="title">Magic quotes functions</h4>
 
    <p class="para">
-    The <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.get-magic-quotes-gpc.php" class="function">get_magic_quotes_gpc()</a></span> and <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.get-magic-quotes-runtime.php" class="function">get_magic_quotes_runtime()</a></span>
-    functions are deprecated. They always return <strong><code>false</code></strong>.
+    The <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.get-magic-quotes-gpc.html" class="function">get_magic_quotes_gpc()</a></span> and <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.get-magic-quotes-runtime.html" class="function">get_magic_quotes_runtime()</a></span>
+    functions are deprecated. They always return <strong><code>FALSE</code></strong>.
    </p>
   </div>
 
   <div class="sect3" id="migration74.deprecated.core.hebrevc">
-   <h4 class="title"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.hebrevc.php" class="function">hebrevc()</a></span> function</h4>
+   <h4 class="title"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.hebrevc.html" class="function">hebrevc()</a></span> function</h4>
 
    <p class="para">
-    The <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.hebrevc.php" class="function">hebrevc()</a></span> function is deprecated.
+    The <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.hebrevc.html" class="function">hebrevc()</a></span> function is deprecated.
     It can be replaced with <code class="literal">nl2br(hebrev($str))</code> or,
     preferably, the use of Unicode RTL support.
    </p>
   </div>
 
   <div class="sect3" id="migration74.deprecated.core.convert-cyr-string">
-   <h4 class="title"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.convert-cyr-string.php" class="function">convert_cyr_string()</a></span> function</h4>
+   <h4 class="title"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.convert-cyr-string.html" class="function">convert_cyr_string()</a></span> function</h4>
 
    <p class="para">
-    The <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.convert-cyr-string.php" class="function">convert_cyr_string()</a></span> function is deprecated.
+    The <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.convert-cyr-string.html" class="function">convert_cyr_string()</a></span> function is deprecated.
     It can be replaced by one of <span class="function"><strong>mb_convert_string()</strong></span>,
-    <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.iconv.php" class="function">iconv()</a></span> or <a target="_blank" href="https://www.php.net/manual/en/class.uconverter.php" class="classname">UConverter</a>.
+    <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.iconv.html" class="function">iconv()</a></span> or <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/class.uconverter.html" class="classname">UConverter</a>.
    </p>
   </div>
 
   <div class="sect3" id="migration74.deprecated.core.money-format">
-   <h4 class="title"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.money-format.php" class="function">money_format()</a></span> function</h4>
+   <h4 class="title"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.money-format.html" class="function">money_format()</a></span> function</h4>
 
    <p class="para">
-    The <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.money-format.php" class="function">money_format()</a></span> function is deprecated.
-    It can be replaced by the intl <a target="_blank" href="https://www.php.net/manual/en/class.numberformatter.php" class="classname">NumberFormatter</a> functionality.
+    The <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.money-format.html" class="function">money_format()</a></span> function is deprecated.
+    It can be replaced by the intl <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/class.numberformatter.html" class="classname">NumberFormatter</a> functionality.
    </p>
   </div>
 
   <div class="sect3" id="migration74.deprecated.core.ezmlm-hash">
-   <h4 class="title"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.ezmlm-hash.php" class="function">ezmlm_hash()</a></span> function</h4>
+   <h4 class="title"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.ezmlm-hash.html" class="function">ezmlm_hash()</a></span> function</h4>
 
    <p class="para">
-    The <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.ezmlm-hash.php" class="function">ezmlm_hash()</a></span> function is deprecated.
+    The <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.ezmlm-hash.html" class="function">ezmlm_hash()</a></span> function is deprecated.
    </p>
   </div>
 
   <div class="sect3" id="migration74.deprecated.core.restore-include-path">
-   <h4 class="title"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.restore-include-path.php" class="function">restore_include_path()</a></span> function</h4>
+   <h4 class="title"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.restore-include-path.html" class="function">restore_include_path()</a></span> function</h4>
 
    <p class="para">
-    The <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.restore-include-path.php" class="function">restore_include_path()</a></span> function is deprecated.
+    The <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.restore-include-path.html" class="function">restore_include_path()</a></span> function is deprecated.
     It can be replaced by <code class="literal">ini_restore('include_path')</code>.
    </p>
   </div>
@@ -425,7 +413,7 @@
    <h4 class="title">Implode with historical parameter order</h4>
 
    <p class="para">
-    Passing parameters to <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.implode.php" class="function">implode()</a></span> in reverse order
+    Passing parameters to <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.implode.html" class="function">implode()</a></span> in reverse order
     is deprecated, use <code class="literal">implode($glue, $parts)</code>
     instead of <code class="literal">implode($parts, $glue)</code>.
    </p>
@@ -455,13 +443,13 @@
   <h3 class="title">Multibyte String</h3>
 
   <p class="para">
-   Passing a non-string pattern to <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.mb-ereg-replace.php" class="function">mb_ereg_replace()</a></span>
+   Passing a non-string pattern to <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.mb-ereg-replace.html" class="function">mb_ereg_replace()</a></span>
    is deprecated. Currently, non-string patterns are interpreted as
    ASCII codepoints. In PHP 8, the pattern will be interpreted as a
    string instead.
   </p>
   <p class="para">
-   Passing the encoding as 3rd parameter to <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.mb-strrpos.php" class="function">mb_strrpos()</a></span>
+   Passing the encoding as 3rd parameter to <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.mb-strrpos.html" class="function">mb_strrpos()</a></span>
    is deprecated. Instead pass a 0 offset, and encoding as 4th parameter.
   </p>
  </div>
@@ -470,10 +458,10 @@
   <h3 class="title">Lightweight Directory Access Protocol</h3>
 
   <p class="para">
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.ldap-control-paged-result-response.php" class="function">ldap_control_paged_result_response()</a></span> and
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.ldap-control-paged-result.php" class="function">ldap_control_paged_result()</a></span> are deprecated.
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.ldap-control-paged-result-response.html" class="function">ldap_control_paged_result_response()</a></span> and
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.ldap-control-paged-result.html" class="function">ldap_control_paged_result()</a></span> are deprecated.
    Pagination controls can be sent along with
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.ldap-search.php" class="function">ldap_search()</a></span> instead.
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.ldap-search.html" class="function">ldap_search()</a></span> instead.
   </p>
  </div>
 
@@ -481,14 +469,14 @@
   <h3 class="title">Reflection</h3>
 
   <p class="para">
-   Calls to <span class="methodname"><a target="_blank" href="https://www.php.net/manual/en/reflectiontype.tostring.php" class="methodname">ReflectionType::__toString()</a></span> now generate
+   Calls to <span class="methodname"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/reflectiontype.tostring.html" class="methodname">ReflectionType::__toString()</a></span> now generate
    a deprecation notice. This method has been deprecated in favor of
-   <span class="methodname"><a target="_blank" href="https://www.php.net/manual/en/reflectionnamedtype.getname.php" class="methodname">ReflectionNamedType::getName()</a></span> in the documentation
+   <span class="methodname"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/reflectionnamedtype.getname.html" class="methodname">ReflectionNamedType::getName()</a></span> in the documentation
    since PHP 7.1, but did not throw a deprecation notice for technical reasons.
   </p>
   <p class="para">
-   The <code class="literal">export()</code> methods on all <a target="_blank" href="https://www.php.net/manual/en/class.reflection.php" class="classname">Reflection</a>
-   classes are deprecated. Construct a <a target="_blank" href="https://www.php.net/manual/en/class.reflection.php" class="classname">Reflection</a> object and
+   The <code class="literal">export()</code> methods on all <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/class.reflection.html" class="classname">Reflection</a>
+   classes are deprecated. Construct a <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/class.reflection.html" class="classname">Reflection</a> object and
    convert it to string instead:
    </p><div class="informalexample">
      <div class="example-contents">
@@ -508,14 +496,14 @@
   <p class="para">
    The <strong><code>AI_IDN_ALLOW_UNASSIGNED</code></strong> and
    <strong><code>AI_IDN_USE_STD3_ASCII_RULES</code></strong> flags for
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.socket-addrinfo-lookup.php" class="function">socket_addrinfo_lookup()</a></span> are deprecated,
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.socket-addrinfo-lookup.html" class="function">socket_addrinfo_lookup()</a></span> are deprecated,
    due to an upstream deprecation in glibc.
   </p>
  </div>
 
 </div></article><article id="layout-content" class="info-version">
     <header class="info-version-header">
-        <h1><a href="https://www.php.net/manual/en/migration73.deprecated.php" target="_blank">PHP 7.3</a></h1>
+        <h1><a href="https://www.php.net/manual/en/migration73.deprecated" target="_blank">PHP 7.3</a></h1>
     </header>
 
     <div id="migration73.deprecated" class="sect1">
@@ -529,7 +517,7 @@
 
    <p class="para">
     The declaration of case-insensitive constants has been deprecated. Passing
-    <strong><code>true</code></strong> as the third argument to <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.define.php" class="function">define()</a></span> will now generate a
+    <strong><code>TRUE</code></strong> as the third argument to <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.define.html" class="function">define()</a></span> will now generate a
     deprecation warning. The use of case-insensitive constants with a case that
     differs from the declaration is also deprecated.
    </p>
@@ -540,7 +528,7 @@
 
    <p class="para">
     Declaring a function called <code class="literal">assert()</code> inside a namespace is
-    deprecated. The <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.assert.php" class="function">assert()</a></span> function is subject to special
+    deprecated. The <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.assert.html" class="function">assert()</a></span> function is subject to special
     handling by the engine, which may lead to inconsistent behavior when defining
     a namespaced function with the same name.
    </p>
@@ -554,30 +542,30 @@
     future the needle will be interpreted as a string instead of an ASCII
     codepoint. Depending on the intended behavior, you should either explicitly
     cast the needle to string or perform an explicit call to
-    <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.chr.php" class="function">chr()</a></span>. The following functions are affected:
+    <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.chr.html" class="function">chr()</a></span>. The following functions are affected:
     </p><ul class="itemizedlist"><li class="listitem">
-      <span class="simpara"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.strpos.php" class="function">strpos()</a></span></span>
+      <span class="simpara"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.strpos.html" class="function">strpos()</a></span></span>
      </li>
      <li class="listitem">
-      <span class="simpara"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.strrpos.php" class="function">strrpos()</a></span></span>
+      <span class="simpara"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.strrpos.html" class="function">strrpos()</a></span></span>
      </li>
      <li class="listitem">
-      <span class="simpara"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.stripos.php" class="function">stripos()</a></span></span>
+      <span class="simpara"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.stripos.html" class="function">stripos()</a></span></span>
      </li>
      <li class="listitem">
-      <span class="simpara"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.strripos.php" class="function">strripos()</a></span></span>
+      <span class="simpara"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.strripos.html" class="function">strripos()</a></span></span>
      </li>
      <li class="listitem">
-      <span class="simpara"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.strstr.php" class="function">strstr()</a></span></span>
+      <span class="simpara"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.strstr.html" class="function">strstr()</a></span></span>
      </li>
      <li class="listitem">
-      <span class="simpara"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.strchr.php" class="function">strchr()</a></span></span>
+      <span class="simpara"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.strchr.html" class="function">strchr()</a></span></span>
      </li>
      <li class="listitem">
-      <span class="simpara"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.strrchr.php" class="function">strrchr()</a></span></span>
+      <span class="simpara"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.strrchr.html" class="function">strrchr()</a></span></span>
      </li>
      <li class="listitem">
-      <span class="simpara"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.stristr.php" class="function">stristr()</a></span></span>
+      <span class="simpara"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.stristr.html" class="function">stristr()</a></span></span>
      </li>
     </ul></div>
 
@@ -585,10 +573,10 @@
    <h4 class="title">Strip-Tags Streaming</h4>
 
    <p class="para">
-    The <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.fgetss.php" class="function">fgetss()</a></span> function and the <a target="_blank" href="https://www.php.net/manual/en/filters.string.php" class="link">string.strip_tags stream filter</a> have been
+    The <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.fgetss.html" class="function">fgetss()</a></span> function and the <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/filters.string.html" class="link">string.strip_tags stream filter</a> have been
     deprecated. This also affects the
-    <span class="methodname"><a target="_blank" href="https://www.php.net/manual/en/splfileobject.fgetss.php" class="methodname">SplFileObject::fgetss()</a></span>
-    method and <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.gzgetss.php" class="function">gzgetss()</a></span> function.
+    <span class="methodname"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/splfileobject.fgetss.html" class="methodname">SplFileObject::fgetss()</a></span>
+    method and <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.gzgetss.html" class="function">gzgetss()</a></span> function.
    </p>
   </div>
 
@@ -609,7 +597,7 @@
   <h3 class="title">Image Processing and GD</h3>
 
   <p class="para">
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.image2wbmp.php" class="function">image2wbmp()</a></span> has been deprecated.
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.image2wbmp.html" class="function">image2wbmp()</a></span> has been deprecated.
   </p>
  </div>
 
@@ -677,7 +665,7 @@
   <h3 class="title">ODBC and DB2 Functions (PDO_ODBC)</h3>
 
   <p class="para">
-   The <a target="_blank" href="https://www.php.net/manual/en/ref.pdo-odbc.php#ini.pdo-odbc.db2-instance-name" class="link">pdo_odbc.db2_instance_name</a>
+   The <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/ref.pdo-odbc.html#ini.pdo-odbc.db2-instance-name" class="link">pdo_odbc.db2_instance_name</a>
    ini setting has been formally deprecated. It is deprecated in the
    documentation as of PHP 5.1.1.
   </p>
@@ -685,7 +673,7 @@
 
 </div></article><article id="layout-content" class="info-version">
     <header class="info-version-header">
-        <h1><a href="https://www.php.net/manual/en/migration72.deprecated.php" target="_blank">PHP 7.2</a></h1>
+        <h1><a href="https://www.php.net/manual/en/migration72.deprecated" target="_blank">PHP 7.2</a></h1>
     </header>
 
     <div id="migration72.deprecated" class="sect1">
@@ -699,7 +687,7 @@
    strings of themselves. This behaviour used to emit an
    <strong><code>E_NOTICE</code></strong>, but will now emit an
    <strong><code>E_WARNING</code></strong>. In the next major version of PHP, an
-   <a target="_blank" href="https://www.php.net/manual/en/class.error.php" class="classname">Error</a> exception will be thrown instead.
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/class.error.html" class="classname">Error</a> exception will be thrown instead.
   </p>
 
   <div class="informalexample">
@@ -714,10 +702,10 @@
  </div>
 
  <div class="sect2" id="migration72.deprecated.png2wbmp-jpeg2wbmp">
-  <h3 class="title"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.png2wbmp.php" class="function">png2wbmp()</a></span> and <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.jpeg2wbmp.php" class="function">jpeg2wbmp()</a></span></h3>
+  <h3 class="title"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.png2wbmp.html" class="function">png2wbmp()</a></span> and <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.jpeg2wbmp.html" class="function">jpeg2wbmp()</a></span></h3>
 
   <p class="para">
-   The <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.png2wbmp.php" class="function">png2wbmp()</a></span> and <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.jpeg2wbmp.php" class="function">jpeg2wbmp()</a></span>
+   The <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.png2wbmp.html" class="function">png2wbmp()</a></span> and <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.jpeg2wbmp.html" class="function">jpeg2wbmp()</a></span>
    functions from the GD extension have now been deprecated and will be removed
    in the next major version of PHP.
   </p>
@@ -729,19 +717,19 @@
   <p class="para">
    The Intl extension has deprecated the
    <strong><code>INTL_IDNA_VARIANT_2003</code></strong> variant, which is currently
-   being used as the default for <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.idn-to-ascii.php" class="function">idn_to_ascii()</a></span> and
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.idn-to-utf8.php" class="function">idn_to_utf8()</a></span>. PHP 7.4 will see these defaults changed to
+   being used as the default for <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.idn-to-ascii.html" class="function">idn_to_ascii()</a></span> and
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.idn-to-utf8.html" class="function">idn_to_utf8()</a></span>. PHP 7.4 will see these defaults changed to
    <strong><code>INTL_IDNA_VARIANT_UTS46</code></strong>, and the next major version of
    PHP will remove <strong><code>INTL_IDNA_VARIANT_2003</code></strong> altogether.
   </p>
  </div>
 
  <div class="sect2" id="migration72.deprecated.__autoload-method">
-  <h3 class="title"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.autoload.php" class="function">__autoload()</a></span> method</h3>
+  <h3 class="title"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.autoload.html" class="function">__autoload()</a></span> method</h3>
 
   <p class="para">
-   The <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.autoload.php" class="function">__autoload()</a></span> method has been deprecated because it is
-   inferior to <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.spl-autoload-register.php" class="function">spl_autoload_register()</a></span> (due to it not being
+   The <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.autoload.html" class="function">__autoload()</a></span> method has been deprecated because it is
+   inferior to <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.spl-autoload-register.html" class="function">spl_autoload_register()</a></span> (due to it not being
    able to chain autoloaders), and there is no interoperability between the two
    autoloading styles.
   </p>
@@ -754,18 +742,18 @@
    When the <code class="parameter">track_errors</code> ini setting is enabled, a
    <code class="literal">$php_errormsg</code> variable is created in the local scope when
    a non-fatal error occurs. Given that the preferred way of retrieving such
-   error information is by using <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.error-get-last.php" class="function">error_get_last()</a></span>, this
+   error information is by using <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.error-get-last.html" class="function">error_get_last()</a></span>, this
    feature has been deprecated.
   </p>
  </div>
 
  <div class="sect2" id="migration72.deprecated.create_function-function">
-  <h3 class="title"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.create-function.php" class="function">create_function()</a></span> function</h3>
+  <h3 class="title"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.create-function.html" class="function">create_function()</a></span> function</h3>
 
   <p class="para">
    Given the security issues of this function (being a thin wrapper around
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.eval.php" class="function">eval()</a></span>), this dated function has now been deprecated.
-   The preferred alternative is to use <a target="_blank" href="https://www.php.net/manual/en/functions.anonymous.php" class="link">anonymous functions</a>.
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.eval.html" class="function">eval()</a></span>), this dated function has now been deprecated.
+   The preferred alternative is to use <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/functions.anonymous.html" class="link">anonymous functions</a>.
   </p>
  </div>
 
@@ -782,39 +770,39 @@
   <h3 class="title"><code class="literal">(unset)</code> cast</h3>
 
   <p class="para">
-   Casting any expression to this type will always result in <strong><code>null</code></strong>, and so
+   Casting any expression to this type will always result in <strong><code>NULL</code></strong>, and so
    this superfluous casting type has now been deprecated.
   </p>
  </div>
 
  <div class="sect2" id="migration72.deprecated.parse_str-no-second-arg">
-  <h3 class="title"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.parse-str.php" class="function">parse_str()</a></span> without a second argument</h3>
+  <h3 class="title"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.parse-str.html" class="function">parse_str()</a></span> without a second argument</h3>
 
   <p class="para">
-   Without the second argument to <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.parse-str.php" class="function">parse_str()</a></span>, the query
+   Without the second argument to <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.parse-str.html" class="function">parse_str()</a></span>, the query
    string parameters would populate the local symbol table.
    Given the security implications of this, using
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.parse-str.php" class="function">parse_str()</a></span> without a second argument has now been
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.parse-str.html" class="function">parse_str()</a></span> without a second argument has now been
    deprecated. The function should always be used with two arguments, as the
    second argument causes the query string to be parsed into an array.
   </p>
  </div>
 
  <div class="sect2" id="migration72.deprecated.gmp_random-function">
-  <h3 class="title"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.gmp-random.php" class="function">gmp_random()</a></span> function</h3>
+  <h3 class="title"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.gmp-random.html" class="function">gmp_random()</a></span> function</h3>
 
   <p class="para">
    This function generates a random number based upon a range that is
    calculated by an unexposed, platform-specific limb size. Because of this,
    the function has now been deprecated. The preferred way of generating a
    random number using the GMP extension is by
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.gmp-random-bits.php" class="function">gmp_random_bits()</a></span> and
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.gmp-random-range.php" class="function">gmp_random_range()</a></span>.
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.gmp-random-bits.html" class="function">gmp_random_bits()</a></span> and
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.gmp-random-range.html" class="function">gmp_random_range()</a></span>.
   </p>
  </div>
 
  <div class="sect2" id="migration72.deprecated.each-function">
-  <h3 class="title"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.each.php" class="function">each()</a></span> function</h3>
+  <h3 class="title"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.each.html" class="function">each()</a></span> function</h3>
 
   <p class="para">
    This function is far slower at iteration than a normal
@@ -824,12 +812,12 @@
  </div>
 
  <div class="sect2" id="migration72.deprecated.assert-string-arg">
-  <h3 class="title"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.assert.php" class="function">assert()</a></span> with a string argument</h3>
+  <h3 class="title"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.assert.html" class="function">assert()</a></span> with a string argument</h3>
 
   <p class="para">
-   Using <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.assert.php" class="function">assert()</a></span> with a string argument required the string
-   to be <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.eval.php" class="function">eval()</a></span>'ed. Given the potential for remote code
-   execution, using <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.assert.php" class="function">assert()</a></span> with a string argument has now
+   Using <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.assert.html" class="function">assert()</a></span> with a string argument required the string
+   to be <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.eval.html" class="function">eval()</a></span>'ed. Given the potential for remote code
+   execution, using <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.assert.html" class="function">assert()</a></span> with a string argument has now
    been deprecated in favour of using boolean expressions.
   </p>
  </div>
@@ -847,17 +835,17 @@
  </div>
 
  <div class="sect2" id="migration72.deprecated.read_exif_data-function">
-  <h3 class="title"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.read-exif-data.php" class="function">read_exif_data()</a></span> function</h3>
+  <h3 class="title"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.read-exif-data.html" class="function">read_exif_data()</a></span> function</h3>
 
   <p class="para">
-   The <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.read-exif-data.php" class="function">read_exif_data()</a></span> alias has been deprecated.
-   The <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.exif-read-data.php" class="function">exif_read_data()</a></span> function should be used instead.
+   The <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.read-exif-data.html" class="function">read_exif_data()</a></span> alias has been deprecated.
+   The <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.exif-read-data.html" class="function">exif_read_data()</a></span> function should be used instead.
   </p>
  </div>
 
 </div></article><article id="layout-content" class="info-version">
     <header class="info-version-header">
-        <h1><a href="https://www.php.net/manual/en/migration71.deprecated.php" target="_blank">PHP 7.1</a></h1>
+        <h1><a href="https://www.php.net/manual/en/migration71.deprecated" target="_blank">PHP 7.1</a></h1>
     </header>
 
     <div id="migration71.deprecated" class="sect1">
@@ -874,17 +862,17 @@
  </div>
 
  <div class="sect2" id="migration71.deprecated.eval-option-for-mb-ereg-replace">
-  <h3 class="title">Eval option for <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.mb-ereg-replace.php" class="function">mb_ereg_replace()</a></span> and <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.mb-eregi-replace.php" class="function">mb_eregi_replace()</a></span></h3>
+  <h3 class="title">Eval option for <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.mb-ereg-replace.html" class="function">mb_ereg_replace()</a></span> and <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.mb-eregi-replace.html" class="function">mb_eregi_replace()</a></span></h3>
 
   <p class="para">
    The <code class="literal">e</code> pattern modifier has been deprecated for the
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.mb-ereg-replace.php" class="function">mb_ereg_replace()</a></span> and
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.mb-eregi-replace.php" class="function">mb_eregi_replace()</a></span> functions.
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.mb-ereg-replace.html" class="function">mb_ereg_replace()</a></span> and
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.mb-eregi-replace.html" class="function">mb_eregi_replace()</a></span> functions.
   </p>
  </div>
 </div></article><article id="layout-content" class="info-version">
     <header class="info-version-header">
-        <h1><a href="https://www.php.net/manual/en/migration70.deprecated.php" target="_blank">PHP 7.0</a></h1>
+        <h1><a href="https://www.php.net/manual/en/migration70.deprecated" target="_blank">PHP 7.0</a></h1>
     </header>
 
     <div id="migration70.deprecated" class="sect1">
@@ -925,7 +913,7 @@ Deprecated: Methods with the same name as their class will not be constructors i
   <h3 class="title">Static calls to non-static methods</h3>
 
   <p class="para">
-   <a target="_blank" href="https://www.php.net/manual/en/language.oop5.static.php" class="link">Static</a> calls to methods that
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/language.oop5.static.html" class="link">Static</a> calls to methods that
    are not declared <strong class="command">static</strong> are deprecated, and may be
    removed in the future.
   </p>
@@ -949,10 +937,10 @@ I am not static!
  </div>
 
  <div class="sect2" id="migration70.deprecated.pwshash-salt-option">
-  <h3 class="title"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.password-hash.php" class="function">password_hash()</a></span> salt option</h3>
+  <h3 class="title"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.password-hash.html" class="function">password_hash()</a></span> salt option</h3>
 
   <p class="para">
-   The salt option for the <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.password-hash.php" class="function">password_hash()</a></span> function has been
+   The salt option for the <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.password-hash.html" class="function">password_hash()</a></span> function has been
    deprecated to prevent developers from generating their own (usually insecure)
    salts. The function itself generates a cryptographically secure salt when no
    salt is provided by the developer - therefore custom salt generation should not
@@ -966,25 +954,25 @@ I am not static!
   <p class="para">
    The <code class="literal">capture_session_meta</code> SSL context option has been
    deprecated. SSL metadata is now available through the
-   <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.stream-get-meta-data.php" class="function">stream_get_meta_data()</a></span> function.
+   <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.stream-get-meta-data.html" class="function">stream_get_meta_data()</a></span> function.
   </p>
  </div>
 
  <div class="sect2" id="migration70.deprecated.ldap">
-  <h3 class="title"><a target="_blank" href="https://www.php.net/manual/en/book.ldap.php" class="link">LDAP</a> deprecations</h3>
+  <h3 class="title"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.ldap.html" class="link">LDAP</a> deprecations</h3>
    <p class="simpara">
     The following function has been deprecated:
    </p>
 
    <ul class="itemizedlist"><li class="listitem">
      <span class="simpara">
-      <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.ldap-sort.php" class="function">ldap_sort()</a></span>
+      <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.ldap-sort.html" class="function">ldap_sort()</a></span>
      </span>
     </li>
    </ul></div>
 </div></article><article id="layout-content" class="info-version">
     <header class="info-version-header">
-        <h1><a href="https://www.php.net/manual/en/migration56.deprecated.php" target="_blank">PHP 5.6</a></h1>
+        <h1><a href="https://www.php.net/manual/en/migration56.deprecated" target="_blank">PHP 5.6</a></h1>
     </header>
 
     <div id="migration56.deprecated" class="sect1">
@@ -1023,108 +1011,108 @@ B
  </div>
 
  <div class="sect2" id="migration56.deprecated.raw-post-data">
-  <h3 class="title"><var class="varname">$HTTP_RAW_POST_DATA</var> and <a target="_blank" href="https://www.php.net/manual/en/ini.core.php#ini.always-populate-raw-post-data" class="link">always_populate_raw_post_data</a></h3>
+  <h3 class="title"><var class="varname"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/reserved.variables.httprawpostdata.html" class="classname">$HTTP_RAW_POST_DATA</a></var> and <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/ini.core.html#ini.always-populate-raw-post-data" class="link">always_populate_raw_post_data</a></h3>
 
   <p class="para">
-   <a target="_blank" href="https://www.php.net/manual/en/ini.core.php#ini.always-populate-raw-post-data" class="link">always_populate_raw_post_data</a>
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/ini.core.html#ini.always-populate-raw-post-data" class="link">always_populate_raw_post_data</a>
    will now generate an <strong><code>E_DEPRECATED</code></strong> error when
-   <var class="varname">$HTTP_RAW_POST_DATA</var> is populated.
+   <var class="varname"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/reserved.variables.httprawpostdata.html" class="classname">$HTTP_RAW_POST_DATA</a></var> is populated.
    New code should use
-   <a target="_blank" href="https://www.php.net/manual/en/wrappers.php.php#wrappers.php.input" class="link"><code class="literal">php://input</code></a>
-   instead of <var class="varname">$HTTP_RAW_POST_DATA</var>, which will be removed
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/wrappers.php.html#wrappers.php.input" class="link"><code class="literal">php://input</code></a>
+   instead of <var class="varname"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/reserved.variables.httprawpostdata.html" class="classname">$HTTP_RAW_POST_DATA</a></var>, which will be removed
    in a future release. You can opt in for the new behaviour (in which
-   <var class="varname">$HTTP_RAW_POST_DATA</var> is never defined hence no
+   <var class="varname"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/reserved.variables.httprawpostdata.html" class="classname">$HTTP_RAW_POST_DATA</a></var> is never defined hence no
    <strong><code>E_DEPRECATED</code></strong> error will be generated) by setting
-   <a target="_blank" href="https://www.php.net/manual/en/ini.core.php#ini.always-populate-raw-post-data" class="link">always_populate_raw_post_data</a>
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/ini.core.html#ini.always-populate-raw-post-data" class="link">always_populate_raw_post_data</a>
    to <code class="literal">-1</code>.
   </p>
  </div>
 
  <div class="sect2" id="migration56.deprecated.iconv-mbstring-encoding">
-  <h3 class="title"><a target="_blank" href="https://www.php.net/manual/en/book.iconv.php" class="link">iconv</a> and <a target="_blank" href="https://www.php.net/manual/en/book.mbstring.php" class="link">mbstring</a> encoding settings</h3>
+  <h3 class="title"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.iconv.html" class="link">iconv</a> and <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.mbstring.html" class="link">mbstring</a> encoding settings</h3>
 
   <p class="para">
-   The <a target="_blank" href="https://www.php.net/manual/en/book.iconv.php" class="link">iconv</a> and
-   <a target="_blank" href="https://www.php.net/manual/en/book.mbstring.php" class="link">mbstring</a> configuration options related
+   The <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.iconv.html" class="link">iconv</a> and
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.mbstring.html" class="link">mbstring</a> configuration options related
    to encoding have been deprecated in favour of
-   <a target="_blank" href="https://www.php.net/manual/en/ini.core.php#ini.default-charset" class="link"><code class="parameter">default_charset</code></a>.
+   <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/ini.core.html#ini.default-charset" class="link"><code class="parameter">default_charset</code></a>.
    The deprecated options are:
   </p>
 
   <ul class="itemizedlist"><li class="listitem">
     <span class="simpara">
-     <a target="_blank" href="https://www.php.net/manual/en/iconv.configuration.php#ini.iconv.input-encoding" class="link"><code class="parameter">iconv.input_encoding</code></a>
+     <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/iconv.configuration.html#ini.iconv.input-encoding" class="link"><code class="parameter">iconv.input_encoding</code></a>
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <a target="_blank" href="https://www.php.net/manual/en/iconv.configuration.php#ini.iconv.output-encoding" class="link"><code class="parameter">iconv.output_encoding</code></a>
+     <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/iconv.configuration.html#ini.iconv.output-encoding" class="link"><code class="parameter">iconv.output_encoding</code></a>
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <a target="_blank" href="https://www.php.net/manual/en/iconv.configuration.php#ini.iconv.internal-encoding" class="link"><code class="parameter">iconv.internal_encoding</code></a>
+     <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/iconv.configuration.html#ini.iconv.internal-encoding" class="link"><code class="parameter">iconv.internal_encoding</code></a>
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <a target="_blank" href="https://www.php.net/manual/en/mbstring.configuration.php#ini.mbstring.http-input" class="link"><code class="parameter">mbstring.http_input</code></a>
+     <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/mbstring.configuration.html#ini.mbstring.http-input" class="link"><code class="parameter">mbstring.http_input</code></a>
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <a target="_blank" href="https://www.php.net/manual/en/mbstring.configuration.php#ini.mbstring.http-output" class="link"><code class="parameter">mbstring.http_output</code></a>
+     <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/mbstring.configuration.html#ini.mbstring.http-output" class="link"><code class="parameter">mbstring.http_output</code></a>
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <a target="_blank" href="https://www.php.net/manual/en/mbstring.configuration.php#ini.mbstring.internal-encoding" class="link"><code class="parameter">mbstring.internal_encoding</code></a>
+     <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/mbstring.configuration.html#ini.mbstring.internal-encoding" class="link"><code class="parameter">mbstring.internal_encoding</code></a>
     </span>
    </li>
   </ul></div>
 </div></article><article id="layout-content" class="info-version">
     <header class="info-version-header">
-        <h1><a href="https://www.php.net/manual/en/migration55.deprecated.php" target="_blank">PHP 5.5</a></h1>
+        <h1><a href="https://www.php.net/manual/en/migration55.deprecated" target="_blank">PHP 5.5</a></h1>
     </header>
 
     <div id="migration55.deprecated" class="sect1">
   <h2 class="title">Deprecated features in PHP 5.5.x</h2>
 
   <div class="sect2" id="migration55.deprecated.mysql">
-   <h3 class="title"><a target="_blank" href="https://www.php.net/manual/en/book.mysql.php" class="link">ext/mysql</a> deprecation</h3>
+   <h3 class="title"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.mysql.html" class="link">ext/mysql</a> deprecation</h3>
 
    <p class="para">
-    The <a target="_blank" href="https://www.php.net/manual/en/book.mysql.php" class="link">original MySQL extension</a> is now
+    The <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.mysql.html" class="link">original MySQL extension</a> is now
     deprecated, and will generate <strong><code>E_DEPRECATED</code></strong> errors
     when connecting to a database. Instead, use the
-    <a target="_blank" href="https://www.php.net/manual/en/book.mysqli.php" class="link">MySQLi</a> or
-    <a target="_blank" href="https://www.php.net/manual/en/ref.pdo-mysql.php" class="link">PDO_MySQL</a> extensions.
+    <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.mysqli.html" class="link">MySQLi</a> or
+    <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/ref.pdo-mysql.html" class="link">PDO_MySQL</a> extensions.
    </p>
   </div>
 
   <div class="sect2" id="migration55.deprecated.preg-replace-e">
-   <h3 class="title"><span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.preg-replace.php" class="function">preg_replace()</a></span> <code class="literal">/e</code> modifier</h3>
+   <h3 class="title"><span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.preg-replace.html" class="function">preg_replace()</a></span> <code class="literal">/e</code> modifier</h3>
 
    <p class="para">
-    The <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.preg-replace.php" class="function">preg_replace()</a></span> <code class="literal">/e</code> modifier is
+    The <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.preg-replace.html" class="function">preg_replace()</a></span> <code class="literal">/e</code> modifier is
     now deprecated. Instead, use the
-    <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.preg-replace-callback.php" class="function">preg_replace_callback()</a></span> function.
+    <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.preg-replace-callback.html" class="function">preg_replace_callback()</a></span> function.
    </p>
   </div>
 
   <div class="sect2" id="migration55.deprecated.intl">
-   <h3 class="title"><a target="_blank" href="https://www.php.net/manual/en/book.intl.php" class="link">intl</a> deprecations</h3>
+   <h3 class="title"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.intl.html" class="link">intl</a> deprecations</h3>
 
    <p class="para">
-    <span class="methodname"><a target="_blank" href="https://www.php.net/manual/en/intldateformatter.settimezoneid.php" class="methodname">IntlDateFormatter::setTimeZoneID()</a></span> and
-    <span class="function"><a target="_blank" href="https://www.php.net/manual/en/intldateformatter.settimezoneid.php" class="function">datefmt_set_timezone_id()</a></span> are now deprecated. Instead,
-    use the <span class="methodname"><a target="_blank" href="https://www.php.net/manual/en/intldateformatter.settimezone.php" class="methodname">IntlDateFormatter::setTimeZone()</a></span> method and
-    <span class="function"><a target="_blank" href="https://www.php.net/manual/en/intldateformatter.settimezone.php" class="function">datefmt_set_timezone()</a></span> function, respectively.
+    <span class="methodname"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/intldateformatter.settimezoneid.html" class="methodname">IntlDateFormatter::setTimeZoneID()</a></span> and
+    <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/intldateformatter.settimezoneid.html" class="function">datefmt_set_timezone_id()</a></span> are now deprecated. Instead,
+    use the <span class="methodname"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/intldateformatter.settimezone.html" class="methodname">IntlDateFormatter::setTimeZone()</a></span> method and
+    <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/intldateformatter.settimezone.html" class="function">datefmt_set_timezone()</a></span> function, respectively.
    </p>
   </div>
 
   <div class="sect2" id="migration55.deprecated.mcrypt">
-   <h3 class="title"><a target="_blank" href="https://www.php.net/manual/en/book.mcrypt.php" class="link">mcrypt</a> deprecations</h3>
+   <h3 class="title"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/book.mcrypt.html" class="link">mcrypt</a> deprecations</h3>
 
    <p class="simpara">
     The following functions have been deprecated:
@@ -1132,28 +1120,28 @@ B
 
    <ul class="itemizedlist"><li class="listitem">
      <span class="simpara">
-      <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.mcrypt-cbc.php" class="function">mcrypt_cbc()</a></span>
+      <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.mcrypt-cbc.html" class="function">mcrypt_cbc()</a></span>
      </span>
     </li>
     <li class="listitem">
      <span class="simpara">
-      <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.mcrypt-cfb.php" class="function">mcrypt_cfb()</a></span>
+      <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.mcrypt-cfb.html" class="function">mcrypt_cfb()</a></span>
      </span>
     </li>
     <li class="listitem">
      <span class="simpara">
-      <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.mcrypt-ecb.php" class="function">mcrypt_ecb()</a></span>
+      <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.mcrypt-ecb.html" class="function">mcrypt_ecb()</a></span>
      </span>
     </li>
     <li class="listitem">
      <span class="simpara">
-      <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.mcrypt-ofb.php" class="function">mcrypt_ofb()</a></span>
+      <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.mcrypt-ofb.html" class="function">mcrypt_ofb()</a></span>
      </span>
     </li>
    </ul></div>
  </div></article><article id="layout-content" class="info-version">
     <header class="info-version-header">
-        <h1><a href="https://www.php.net/manual/en/migration54.deprecated.php" target="_blank">PHP 5.4</a></h1>
+        <h1><a href="https://www.php.net/manual/en/migration54.deprecated" target="_blank">PHP 5.4</a></h1>
     </header>
 
     <div id="migration54.deprecated" class="section">
@@ -1163,12 +1151,12 @@ B
   </p>
   <ul class="itemizedlist"><li class="listitem">
     <span class="simpara">
-     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.mysql-list-dbs.php" class="function">mysql_list_dbs()</a></span>
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.mysql-list-dbs.html" class="function">mysql_list_dbs()</a></span>
     </span>
    </li>
   </ul></div></article><article id="layout-content" class="info-version">
     <header class="info-version-header">
-        <h1><a href="https://www.php.net/manual/en/migration53.deprecated.php" target="_blank">PHP 5.3</a></h1>
+        <h1><a href="https://www.php.net/manual/en/migration53.deprecated" target="_blank">PHP 5.3</a></h1>
     </header>
 
     <div id="migration53.deprecated" class="section">
@@ -1190,37 +1178,37 @@ B
   </p>
   <ul class="itemizedlist"><li class="listitem">
     <span class="simpara">
-     <a target="_blank" href="https://www.php.net/manual/en/network.configuration.php#ini.define-syslog-variables" class="link">define_syslog_variables</a>
+     <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/network.configuration.html#ini.define-syslog-variables" class="link">define_syslog_variables</a>
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <a target="_blank" href="https://www.php.net/manual/en/ini.core.php#ini.register-globals" class="link">register_globals</a>
+     <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/ini.core.html#ini.register-globals" class="link">register_globals</a>
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <a target="_blank" href="https://www.php.net/manual/en/ini.core.php#ini.register-long-arrays" class="link">register_long_arrays</a>
+     <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/ini.core.html#ini.register-long-arrays" class="link">register_long_arrays</a>
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     safe_mode
+     <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/ini.sect.safe-mode.html#ini.safe-mode" class="link">safe_mode</a>
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <a target="_blank" href="https://www.php.net/manual/en/info.configuration.php#ini.magic-quotes-gpc" class="link">magic_quotes_gpc</a>
+     <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/info.configuration.html#ini.magic-quotes-gpc" class="link">magic_quotes_gpc</a>
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <a target="_blank" href="https://www.php.net/manual/en/info.configuration.php#ini.magic-quotes-runtime" class="link">magic_quotes_runtime</a>
+     <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/info.configuration.html#ini.magic-quotes-runtime" class="link">magic_quotes_runtime</a>
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     magic_quotes_sybase
+     <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/sybase.configuration.html#ini.magic-quotes-sybase" class="link">magic_quotes_sybase</a>
     </span>
    </li>
    <li class="listitem">
@@ -1233,111 +1221,111 @@ B
   </p>
   <ul class="itemizedlist"><li class="listitem">
     <span class="simpara">
-     <span class="function"><strong>call_user_method()</strong></span> (use
-     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.call-user-func.php" class="function">call_user_func()</a></span> instead)
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.call-user-method.html" class="function">call_user_method()</a></span> (use
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.call-user-func.html" class="function">call_user_func()</a></span> instead)
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <span class="function"><strong>call_user_method_array()</strong></span> (use
-     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.call-user-func-array.php" class="function">call_user_func_array()</a></span> instead)
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.call-user-method-array.html" class="function">call_user_method_array()</a></span> (use
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.call-user-func-array.html" class="function">call_user_func_array()</a></span> instead)
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.define-syslog-variables.php" class="function">define_syslog_variables()</a></span>
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.define-syslog-variables.html" class="function">define_syslog_variables()</a></span>
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.dl.php" class="function">dl()</a></span>
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.dl.html" class="function">dl()</a></span>
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.ereg.php" class="function">ereg()</a></span> (use <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.preg-match.php" class="function">preg_match()</a></span> instead)
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.ereg.html" class="function">ereg()</a></span> (use <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.preg-match.html" class="function">preg_match()</a></span> instead)
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.ereg-replace.php" class="function">ereg_replace()</a></span> (use <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.preg-replace.php" class="function">preg_replace()</a></span>
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.ereg-replace.html" class="function">ereg_replace()</a></span> (use <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.preg-replace.html" class="function">preg_replace()</a></span>
      instead)
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.eregi.php" class="function">eregi()</a></span> (use <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.preg-match.php" class="function">preg_match()</a></span> with the
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.eregi.html" class="function">eregi()</a></span> (use <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.preg-match.html" class="function">preg_match()</a></span> with the
      <code class="literal">'i'</code> modifier instead)
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.eregi-replace.php" class="function">eregi_replace()</a></span> (use <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.preg-replace.php" class="function">preg_replace()</a></span>
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.eregi-replace.html" class="function">eregi_replace()</a></span> (use <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.preg-replace.html" class="function">preg_replace()</a></span>
      with the <code class="literal">'i'</code> modifier instead)
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.mcrypt-generic-end.php" class="function">mcrypt_generic_end()</a></span>
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.mcrypt-generic-end.html" class="function">mcrypt_generic_end()</a></span>
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <span class="function"><strong>set_magic_quotes_runtime()</strong></span> and its alias,
-     <span class="function"><strong>magic_quotes_runtime()</strong></span>
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.set-magic-quotes-runtime.html" class="function">set_magic_quotes_runtime()</a></span> and its alias,
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.magic-quotes-runtime.html" class="function">magic_quotes_runtime()</a></span>
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.session-register.php" class="function">session_register()</a></span> (use the <var class="varname"><a target="_blank" href="https://www.php.net/manual/en/reserved.variables.session.php" class="classname">$_SESSION</a></var>
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.session-register.html" class="function">session_register()</a></span> (use the <var class="varname"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/reserved.variables.session.html" class="classname">$_SESSION</a></var>
      superglobal instead)
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.session-unregister.php" class="function">session_unregister()</a></span> (use the
-     <var class="varname"><a target="_blank" href="https://www.php.net/manual/en/reserved.variables.session.php" class="classname">$_SESSION</a></var> superglobal instead)
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.session-unregister.html" class="function">session_unregister()</a></span> (use the
+     <var class="varname"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/reserved.variables.session.html" class="classname">$_SESSION</a></var> superglobal instead)
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.session-is-registered.php" class="function">session_is_registered()</a></span> (use the
-     <var class="varname"><a target="_blank" href="https://www.php.net/manual/en/reserved.variables.session.php" class="classname">$_SESSION</a></var> superglobal instead)
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.session-is-registered.html" class="function">session_is_registered()</a></span> (use the
+     <var class="varname"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/reserved.variables.session.html" class="classname">$_SESSION</a></var> superglobal instead)
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <span class="function"><strong>set_socket_blocking()</strong></span> (use
-     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.stream-set-blocking.php" class="function">stream_set_blocking()</a></span> instead)
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.set-socket-blocking.html" class="function">set_socket_blocking()</a></span> (use
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.stream-set-blocking.html" class="function">stream_set_blocking()</a></span> instead)
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.split.php" class="function">split()</a></span> (use <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.preg-split.php" class="function">preg_split()</a></span> instead)
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.split.html" class="function">split()</a></span> (use <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.preg-split.html" class="function">preg_split()</a></span> instead)
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.spliti.php" class="function">spliti()</a></span> (use <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.preg-split.php" class="function">preg_split()</a></span> with the
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.spliti.html" class="function">spliti()</a></span> (use <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.preg-split.html" class="function">preg_split()</a></span> with the
      <code class="literal">'i'</code> modifier instead)
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.sql-regcase.php" class="function">sql_regcase()</a></span>
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.sql-regcase.html" class="function">sql_regcase()</a></span>
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.mysql-db-query.php" class="function">mysql_db_query()</a></span> (use
-     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.mysql-select-db.php" class="function">mysql_select_db()</a></span> and <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.mysql-query.php" class="function">mysql_query()</a></span>
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.mysql-db-query.html" class="function">mysql_db_query()</a></span> (use
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.mysql-select-db.html" class="function">mysql_select_db()</a></span> and <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.mysql-query.html" class="function">mysql_query()</a></span>
      instead)
     </span>
    </li>
    <li class="listitem">
     <span class="simpara">
-     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.mysql-escape-string.php" class="function">mysql_escape_string()</a></span> (use
-     <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.mysql-real-escape-string.php" class="function">mysql_real_escape_string()</a></span> instead)
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.mysql-escape-string.html" class="function">mysql_escape_string()</a></span> (use
+     <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.mysql-real-escape-string.html" class="function">mysql_real_escape_string()</a></span> instead)
     </span>
    </li>
    <li class="listitem">
@@ -1348,7 +1336,7 @@ B
    </li>
    <li class="listitem">
     <span class="simpara">
-     The <code class="parameter">is_dst</code> parameter to <span class="function"><a target="_blank" href="https://www.php.net/manual/en/function.mktime.php" class="function">mktime()</a></span>.
+     The <code class="parameter">is_dst</code> parameter to <span class="function"><a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/function.mktime.html" class="function">mktime()</a></span>.
      Use the new timezone handling functions instead.
     </span>
    </li>
@@ -1358,7 +1346,7 @@ B
   <ul class="itemizedlist"><li class="listitem">
     <span class="simpara">
      Assigning the return value of
-     <a target="_blank" href="https://www.php.net/manual/en/language.oop5.basic.php#language.oop5.basic.new" class="link">new</a> by reference is now
+     <a target="_blank" href="https://php-legacy-docs.zend.com/manual/php5/en/language.oop5.basic.html#language.oop5.basic.new" class="link">new</a> by reference is now
      deprecated.
     </span>
    </li>

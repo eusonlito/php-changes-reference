@@ -19,26 +19,6 @@ class HtmlAll extends CommandAbstract
     }
 
     /**
-     * @param string $name
-     *
-     * @return string
-     */
-    protected function name(string $name): string
-    {
-        return preg_replace('/[^a-z0-9-]/', '', $name);
-    }
-
-    /**
-     * @param string $path = ''
-     *
-     * @return string
-     */
-    protected function url(string $path = ''): string
-    {
-        return static::URL_DOCS.'/'.$path;
-    }
-
-    /**
      * @param string $file = ''
      *
      * @return string

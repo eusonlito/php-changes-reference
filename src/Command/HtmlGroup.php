@@ -125,21 +125,11 @@ class HtmlGroup extends CommandAbstract
             $html .= TemplateView::get('info-version', [
                 'version' => $version,
                 'link' => $this->url(basename($file)),
-                'content' => $this->htmlInfoVersionContent($file)
+                'content' => file_get_contents($file)
             ]);
         }
 
         return $html;
-    }
-
-    /**
-     * @param string $file
-     *
-     * @return string
-     */
-    protected function htmlInfoVersionContent(string $file): string
-    {
-        return str_replace('href="', 'target="_blank" href="'.$this->url(), file_get_contents($file));
     }
 
     /**

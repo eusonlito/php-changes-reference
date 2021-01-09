@@ -13,7 +13,6 @@ class Chunk extends CommandAbstract
     public function handle(): void
     {
         $this->clean();
-        $this->create();
 
         foreach ($this->files() as $file) {
             $this->store($file, $this->html($file));
@@ -26,14 +25,6 @@ class Chunk extends CommandAbstract
     protected function clean(): void
     {
         DirectoryFilesystem::rmdir($this->path());
-    }
-
-    /**
-     * @return void
-     */
-    protected function create(): void
-    {
-        DirectoryFilesystem::mkdir($this->path());
     }
 
     /**
@@ -61,7 +52,7 @@ class Chunk extends CommandAbstract
      */
     protected function html(string $file): string
     {
-        $id = preg_replace('/\.php$/', '', basename($file));
+        $id = $this->nameFromCache($file);
         $dom = $this->dom($file);
 
         return $dom->toHtml($dom->queryItem('//div[@id="'.$id.'"]'));
@@ -87,8 +78,18 @@ class Chunk extends CommandAbstract
      *
      * @return string
      */
+    protected function nameFromCache(string $file): string
+    {
+        return preg_replace('/\.[a-z]+$/', '', basename(base64_decode(basename($file))));
+    }
+
+    /**
+     * @param string $file
+     *
+     * @return string
+     */
     protected function storeName(string $file): string
     {
-        return $this->path(basename($file));
+        return $this->path($this->nameFromCache($file));
     }
 }
