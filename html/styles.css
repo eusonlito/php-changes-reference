@@ -242,7 +242,7 @@ header.title, h1:after, h2:after, h3:after {
     .index-main ul li a {
         display: grid;
     }
-
+  
     .index-main ul li a .versions  {
         justify-self: self-end;
     }
